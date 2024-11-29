@@ -4,14 +4,73 @@ using namespace std;
 
 void Reassembler::insert( uint64_t first_index, string data, bool is_last_substring )
 {
-  // Your code here.
-  (void)first_index;
-  (void)data;
-  (void)is_last_substring;
+    if(is_last_substring){
+        eol = first_index + data.size();
+    }
+    uint64_t windowBegin = bytes_unassembled;
+    uint64_t windowEnd = windowBegin + output_.writer().available_capacity();
+    uint64_t last_index = first_index + data.size();
+    if(first_index < windowBegin) {
+        data = data.erase(0, std::min(windowBegin, last_index) - first_index);
+        first_index = windowBegin;
+    }
+    if(last_index > windowEnd){
+        data = data.substr(0, data.size() - last_index + std::max(first_index, windowEnd));
+        last_index = windowEnd;
+    }
+    if(data.empty()){
+        if(bytes_unassembled >= eol){
+            output_.writer().close();
+        }
+        return;
+    }
+    if(intervals.empty()){
+        intervals.emplace_back(first_index, data);
+    }
+    auto it = intervals.begin();
+    while(it != intervals.end() && it->first + it->second.size() < first_index)
+        it++;
+
+    if(it != intervals.end()){
+        auto it2 = it;
+        uint64_t maxidx = last_index;
+
+
+        uint64_t leftmostIntFirst = std::min(it->first, first_index);
+        std::string rightmostIntDat;
+
+
+        int64_t offset = first_index - it->first;
+        std::string leftmostIntData = it->second.substr(0, std::max(offset, (int64_t)0));
+        while(it2->first <= last_index && it2 != intervals.end()){
+            if(it2->first + it2->second.size() > maxidx){
+                maxidx = it2->first + it2->second.size();
+                rightmostIntDat = it2->second.erase(0, last_index - it2->first);
+            }
+            it2++;
+        }
+        it = intervals.erase(it, it2);
+        data = leftmostIntData + data + rightmostIntDat;
+        intervals.insert(it, {leftmostIntFirst, data});
+    }else{
+        intervals.emplace_back(first_index, data);
+    }
+    if(intervals.begin()->first == windowBegin){
+        data = intervals.begin()->second;
+        output_.writer().push(data);
+        bytes_unassembled += data.size();
+        intervals.pop_front();
+        if(bytes_unassembled >= eol){
+            output_.writer().close();
+        }
+    }
 }
 
 uint64_t Reassembler::bytes_pending() const
 {
-  // Your code here.
-  return {};
+    uint64_t total = 0;
+    for(const auto& it : intervals){
+        total += it.second.size();
+    }
+    return total;
 }

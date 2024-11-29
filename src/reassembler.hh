@@ -1,6 +1,7 @@
 #pragma once
-
+#include <map>
 #include "byte_stream.hh"
+#include <list>
 
 class Reassembler
 {
@@ -28,6 +29,8 @@ public:
    *
    * The Reassembler should close the stream after writing the last byte.
    */
+
+  // for a packet to be received, both its head and tail should be in the window range!!
   void insert( uint64_t first_index, std::string data, bool is_last_substring );
 
   // How many bytes are stored in the Reassembler itself?
@@ -42,4 +45,7 @@ public:
 
 private:
   ByteStream output_; // the Reassembler writes to this ByteStream
+  uint64_t bytes_unassembled{0}; // the next index within the bytestream, before this all the bytes are commited
+  uint64_t eol{UINT64_MAX};
+  std::list<std::pair<uint64_t, std::string>> intervals{};
 };
