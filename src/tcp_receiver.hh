@@ -3,6 +3,7 @@
 #include "reassembler.hh"
 #include "tcp_receiver_message.hh"
 #include "tcp_sender_message.hh"
+enum State{CLOSED, SYN_RECEIVED, ESTABLISHED, WAIT_CLOSE, LISTEN};
 
 class TCPReceiver
 {
@@ -27,4 +28,8 @@ public:
 
 private:
   Reassembler reassembler_;
+  Wrap32 SenderISN{0};
+  uint64_t SenderSN{0};
+  uint64_t unassembledIdx{0};
+  State state{LISTEN};
 };

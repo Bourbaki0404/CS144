@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -13,20 +13,29 @@
     <generated>
       <config projectName="minnow" targetName="tidy_tests__reassembler_cap.cc" />
       <config projectName="minnow" targetName="ExperimentalConfigure" />
+      <config projectName="minnow" targetName="tidy_util__tcp_config.hh" />
       <config projectName="minnow" targetName="tidy_tests__common.cc" />
       <config projectName="minnow" targetName="ContinuousSubmit" />
+      <config projectName="minnow" targetName="wrapping_integers_cmp_sanitized" />
+      <config projectName="minnow" targetName="tidy_tests__recv_connect.cc" />
       <config projectName="minnow" targetName="check_webget" />
       <config projectName="minnow" targetName="tidy_util__exception.hh" />
       <config projectName="minnow" targetName="byte_stream_one_write_sanitized" />
       <config projectName="minnow" targetName="tidy-all" />
       <config projectName="minnow" targetName="tidy_util__checksum.hh" />
+      <config projectName="minnow" targetName="recv_special" />
+      <config projectName="minnow" targetName="wrapping_integers_extra" />
       <config projectName="minnow" targetName="tidy_util__socket.cc" />
       <config projectName="minnow" targetName="tidy_tests__reassembler_test_harness.hh" />
+      <config projectName="minnow" targetName="tidy_util__tcp_sender_message.hh" />
+      <config projectName="minnow" targetName="recv_connect_sanitized" />
       <config projectName="minnow" targetName="tidy_tests__byte_stream_stress_test.cc" />
       <config projectName="minnow" targetName="reassembler_dup" />
       <config projectName="minnow" targetName="ExperimentalSubmit" />
       <config projectName="minnow" targetName="NightlySubmit" />
+      <config projectName="minnow" targetName="tidy_tests__recv_special.cc" />
       <config projectName="minnow" targetName="tcp_native" />
+      <config projectName="minnow" targetName="tidy_tests__wrapping_integers_unwrap.cc" />
       <config projectName="minnow" targetName="tidy_src__byte_stream.hh" />
       <config projectName="minnow" targetName="ExperimentalStart" />
       <config projectName="minnow" targetName="NightlyBuild" />
@@ -36,32 +45,45 @@
       <config projectName="minnow" targetName="tidy_util__tun.hh" />
       <config projectName="minnow" targetName="ExperimentalCoverage" />
       <config projectName="minnow" targetName="check4" />
+      <config projectName="minnow" targetName="tidy_tests__recv_reorder_more.cc" />
       <config projectName="minnow" targetName="check5" />
       <config projectName="minnow" targetName="check2" />
       <config projectName="minnow" targetName="ContinuousConfigure" />
       <config projectName="minnow" targetName="byte_stream_basics" />
+      <config projectName="minnow" targetName="recv_reorder_more_sanitized" />
       <config projectName="minnow" targetName="check3" />
       <config projectName="minnow" targetName="tidy_tests__reassembler_win.cc" />
       <config projectName="minnow" targetName="check0" />
       <config projectName="minnow" targetName="check1" />
+      <config projectName="minnow" targetName="recv_reorder_sanitized" />
       <config projectName="minnow" targetName="tidy_util__ipv4_header.hh" />
       <config projectName="minnow" targetName="NightlyStart" />
       <config projectName="minnow" targetName="tidy_tests__reassembler_seq.cc" />
       <config projectName="minnow" targetName="tidy_util__address.cc" />
       <config projectName="minnow" targetName="ContinuousTest" />
+      <config projectName="minnow" targetName="recv_window_sanitized" />
+      <config projectName="minnow" targetName="tidy_src__tcp_receiver.cc" />
+      <config projectName="minnow" targetName="tidy_tests__wrapping_integers_cmp.cc" />
       <config projectName="minnow" targetName="tidy_apps__tcp_native.cc" />
       <config projectName="minnow" targetName="byte_stream_many_writes" />
       <config projectName="minnow" targetName="reassembler_seq_sanitized" />
       <config projectName="minnow" targetName="util_debug" />
+      <config projectName="minnow" targetName="wrapping_integers_roundtrip" />
+      <config projectName="minnow" targetName="tidy_tests__wrapping_integers_extra.cc" />
       <config projectName="minnow" targetName="tidy_tests__reassembler_single.cc" />
       <config projectName="minnow" targetName="reassembler_single" />
       <config projectName="minnow" targetName="tidy_util__random.cc" />
       <config projectName="minnow" targetName="NightlyTest" />
       <config projectName="minnow" targetName="ContinuousCoverage" />
+      <config projectName="minnow" targetName="tidy_src__wrapping_integers.hh" />
       <config projectName="minnow" targetName="tidy_util__ipv4_header.cc" />
+      <config projectName="minnow" targetName="tidy_tests__receiver_test_harness.hh" />
       <config projectName="minnow" targetName="tidy_apps__webget.cc" />
       <config projectName="minnow" targetName="tidy_util__file_descriptor.cc" />
       <config projectName="minnow" targetName="tidy_tests__byte_stream_two_writes.cc" />
+      <config projectName="minnow" targetName="tidy_tests__recv_reorder.cc" />
+      <config projectName="minnow" targetName="tidy_tests__recv_close.cc" />
+      <config projectName="minnow" targetName="wrapping_integers_roundtrip_sanitized" />
       <config projectName="minnow" targetName="reassembler_overlapping_sanitized" />
       <config projectName="minnow" targetName="Experimental" />
       <config projectName="minnow" targetName="ExperimentalMemCheck" />
@@ -77,6 +99,7 @@
       <config projectName="minnow" targetName="NightlyMemoryCheck" />
       <config projectName="minnow" targetName="reassembler_seq" />
       <config projectName="minnow" targetName="byte_stream_speed_test" />
+      <config projectName="minnow" targetName="tidy_tests__recv_window.cc" />
       <config projectName="minnow" targetName="byte_stream_basics_sanitized" />
       <config projectName="minnow" targetName="minnow_testing_sanitized" />
       <config projectName="minnow" targetName="ContinuousMemCheck" />
@@ -85,6 +108,7 @@
       <config projectName="minnow" targetName="tidy_tests__byte_stream_many_writes.cc" />
       <config projectName="minnow" targetName="tidy_util__tun.cc" />
       <config projectName="minnow" targetName="NightlyMemCheck" />
+      <config projectName="minnow" targetName="recv_close" />
       <config projectName="minnow" targetName="minnow_debug" />
       <config projectName="minnow" targetName="tidy_src__reassembler.cc" />
       <config projectName="minnow" targetName="minnow_optimized" />
@@ -92,6 +116,7 @@
       <config projectName="minnow" targetName="tidy_tests__byte_stream_one_write.cc" />
       <config projectName="minnow" targetName="NightlyConfigure" />
       <config projectName="minnow" targetName="reassembler_holes_sanitized" />
+      <config projectName="minnow" targetName="tidy_tests__wrapping_integers_roundtrip.cc" />
       <config projectName="minnow" targetName="tidy_util__address.hh" />
       <config projectName="minnow" targetName="byte_stream_one_write" />
       <config projectName="minnow" targetName="speed_testing" />
@@ -101,10 +126,14 @@
       <config projectName="minnow" targetName="ContinuousUpdate" />
       <config projectName="minnow" targetName="tidy_tests__byte_stream_speed_test.cc" />
       <config projectName="minnow" targetName="tidy_util__parser.hh" />
+      <config projectName="minnow" targetName="recv_reorder" />
+      <config projectName="minnow" targetName="recv_window" />
+      <config projectName="minnow" targetName="recv_special_sanitized" />
       <config projectName="minnow" targetName="tidy_tests__reassembler_holes.cc" />
       <config projectName="minnow" targetName="tidy" />
       <config projectName="minnow" targetName="tidy_tests__byte_stream_basics.cc" />
       <config projectName="minnow" targetName="reassembler_win_sanitized" />
+      <config projectName="minnow" targetName="recv_close_sanitized" />
       <config projectName="minnow" targetName="byte_stream_two_writes" />
       <config projectName="minnow" targetName="tidy_util__file_descriptor.hh" />
       <config projectName="minnow" targetName="tidy_tests__reassembler_speed_test.cc" />
@@ -116,26 +145,41 @@
       <config projectName="minnow" targetName="reassembler_cap" />
       <config projectName="minnow" targetName="ExperimentalTest" />
       <config projectName="minnow" targetName="util_optimized" />
+      <config projectName="minnow" targetName="recv_reorder_more" />
       <config projectName="minnow" targetName="tidy_apps__bidirectional_stream_copy.hh" />
       <config projectName="minnow" targetName="NightlyCoverage" />
+      <config projectName="minnow" targetName="recv_transmit" />
       <config projectName="minnow" targetName="byte_stream_two_writes_sanitized" />
+      <config projectName="minnow" targetName="tidy_tests__recv_transmit.cc" />
+      <config projectName="minnow" targetName="recv_connect" />
       <config projectName="minnow" targetName="reassembler_cap_sanitized" />
       <config projectName="minnow" targetName="util_sanitized" />
+      <config projectName="minnow" targetName="wrapping_integers_wrap" />
       <config projectName="minnow" targetName="ContinuousBuild" />
+      <config projectName="minnow" targetName="wrapping_integers_unwrap" />
       <config projectName="minnow" targetName="minnow_testing_debug" />
+      <config projectName="minnow" targetName="tidy_src__tcp_receiver.hh" />
+      <config projectName="minnow" targetName="wrapping_integers_wrap_sanitized" />
       <config projectName="minnow" targetName="tidy_src__byte_stream_helpers.cc" />
       <config projectName="minnow" targetName="tidy_tests__conversions.hh" />
       <config projectName="minnow" targetName="functionality_testing" />
+      <config projectName="minnow" targetName="tidy_tests__wrapping_integers_wrap.cc" />
+      <config projectName="minnow" targetName="wrapping_integers_unwrap_sanitized" />
       <config projectName="minnow" targetName="tidy_tests__common.hh" />
       <config projectName="minnow" targetName="format" />
       <config projectName="minnow" targetName="tidy_src__reassembler.hh" />
       <config projectName="minnow" targetName="tidy_util__random.hh" />
+      <config projectName="minnow" targetName="wrapping_integers_extra_sanitized" />
+      <config projectName="minnow" targetName="tidy_src__wrapping_integers.cc" />
       <config projectName="minnow" targetName="tidy_tests__test_should_be.hh" />
       <config projectName="minnow" targetName="byte_stream_stress_test" />
       <config projectName="minnow" targetName="ContinuousStart" />
       <config projectName="minnow" targetName="reassembler_speed_test" />
+      <config projectName="minnow" targetName="tidy_util__tcp_receiver_message.hh" />
+      <config projectName="minnow" targetName="wrapping_integers_cmp" />
       <config projectName="minnow" targetName="tidy_tests__byte_stream_test_harness.hh" />
       <config projectName="minnow" targetName="tidy_src__byte_stream.cc" />
+      <config projectName="minnow" targetName="recv_transmit_sanitized" />
       <config projectName="minnow" targetName="webget" />
       <config projectName="minnow" targetName="reassembler_win" />
       <config projectName="minnow" targetName="ExperimentalBuild" />
@@ -148,18 +192,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe688d10-cedf-4fb8-a4dd-a4f3df487bd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/minnow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/webget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/apps/webget.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/byte_stream.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/byte_stream.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/byte_stream.hh" beforeDir="false" afterPath="$PROJECT_DIR$/src/byte_stream.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/byte_stream_test_harness.hh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/byte_stream_test_harness.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/common.hh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/common.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-0587c8ac2acde347f4ce.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-28T17-37-39-0947.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-byte_stream_speed_test-Debug-aa4c1ea0df59a6db44c1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-functionality_testing-Debug-75f10fb1e36d9805bc4f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_debug-Debug-733fe54fcf6dfc280fb4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_optimized-Debug-9a48b9f0fa2c74ffbe25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_sanitized-Debug-40b48fdf3090f560021b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-reassembler_speed_test-Debug-bd0e8a1b1f8d09ad998b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-speed_testing-Debug-82f4c12f1bb809f62894.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-tidy-Debug-78ce62ca2378e83e61df.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-tidy-all-Debug-d4fb40874bd1defb7b4a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/CTestCostData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/CTestCostData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/reassembler.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/reassembler.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/reassembler.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/reassembler.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_debug.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_debug.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_optimized.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_optimized.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_sanitized.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_sanitized.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_basics.dir/byte_stream_basics.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_basics.dir/byte_stream_basics.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_basics_sanitized.dir/byte_stream_basics.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_basics_sanitized.dir/byte_stream_basics.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_capacity.dir/byte_stream_capacity.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_capacity.dir/byte_stream_capacity.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_capacity_sanitized.dir/byte_stream_capacity.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_capacity_sanitized.dir/byte_stream_capacity.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_many_writes.dir/byte_stream_many_writes.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_many_writes.dir/byte_stream_many_writes.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_many_writes_sanitized.dir/byte_stream_many_writes.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_many_writes_sanitized.dir/byte_stream_many_writes.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_one_write.dir/byte_stream_one_write.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_one_write.dir/byte_stream_one_write.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_one_write_sanitized.dir/byte_stream_one_write.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_one_write_sanitized.dir/byte_stream_one_write.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_stress_test.dir/byte_stream_stress_test.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_stress_test.dir/byte_stream_stress_test.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_stress_test_sanitized.dir/byte_stream_stress_test.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_stress_test_sanitized.dir/byte_stream_stress_test.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_two_writes.dir/byte_stream_two_writes.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_two_writes.dir/byte_stream_two_writes.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_two_writes_sanitized.dir/byte_stream_two_writes.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/byte_stream_two_writes_sanitized.dir/byte_stream_two_writes.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/minnow_testing_debug.dir/common.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/minnow_testing_debug.dir/common.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/minnow_testing_sanitized.dir/common.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/minnow_testing_sanitized.dir/common.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_cap.dir/reassembler_cap.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_cap.dir/reassembler_cap.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_cap_sanitized.dir/reassembler_cap.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_cap_sanitized.dir/reassembler_cap.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_dup.dir/reassembler_dup.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_dup.dir/reassembler_dup.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_dup_sanitized.dir/reassembler_dup.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_dup_sanitized.dir/reassembler_dup.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_holes.dir/reassembler_holes.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_holes.dir/reassembler_holes.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_holes_sanitized.dir/reassembler_holes.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_holes_sanitized.dir/reassembler_holes.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_overlapping.dir/reassembler_overlapping.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_overlapping.dir/reassembler_overlapping.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_overlapping_sanitized.dir/reassembler_overlapping.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_overlapping_sanitized.dir/reassembler_overlapping.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_seq.dir/reassembler_seq.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_seq.dir/reassembler_seq.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_seq_sanitized.dir/reassembler_seq.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_seq_sanitized.dir/reassembler_seq.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_single.dir/reassembler_single.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_single.dir/reassembler_single.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_single_sanitized.dir/reassembler_single.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_single_sanitized.dir/reassembler_single.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_win.dir/reassembler_win.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_win.dir/reassembler_win.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_win_sanitized.dir/reassembler_win.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_win_sanitized.dir/reassembler_win.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_basics" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_basics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_basics_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_basics_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_capacity" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_capacity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_capacity_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_capacity_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_many_writes" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_many_writes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_many_writes_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_many_writes_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_one_write" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_one_write" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_one_write_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_one_write_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_stress_test" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_stress_test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_stress_test_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_stress_test_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_two_writes" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_two_writes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_two_writes_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/byte_stream_two_writes_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/libminnow_testing_debug.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/libminnow_testing_debug.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/libminnow_testing_sanitized.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/libminnow_testing_sanitized.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_cap" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_cap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_cap_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_cap_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_dup" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_dup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_dup_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_dup_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_holes" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_holes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_holes_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_holes_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_overlapping" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_overlapping" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_overlapping_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_overlapping_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_seq" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_seq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_seq_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_seq_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_single" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_single" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_single_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_single_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_speed_test" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_speed_test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_win" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_win" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_win_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_win_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reassembler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/reassembler.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reassembler.hh" beforeDir="false" afterPath="$PROJECT_DIR$/src/reassembler.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tcp_receiver.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_receiver.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tcp_receiver.hh" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_receiver.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrapping_integers.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapping_integers.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/wrapping_integers_roundtrip.cc" beforeDir="false" afterPath="$PROJECT_DIR$/tests/wrapping_integers_roundtrip.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,9 +301,9 @@
     <option name="minorVersion" value="1.1" />
     <option name="productBranch" value="Classic" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2pTZsg2IYf7JiOEASfbaoZY1VjI" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -190,54 +312,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "CMake Application.byte_stream_basics.executor": "Run",
-    "CMake Application.byte_stream_capacity.executor": "Run",
-    "CMake Application.byte_stream_many_writes.executor": "Run",
-    "CMake Application.byte_stream_one_write.executor": "Run",
-    "CMake Application.byte_stream_speed_test.executor": "Run",
-    "CMake Application.byte_stream_stress_test.executor": "Run",
-    "CMake Application.byte_stream_two_writes.executor": "Run",
-    "CMake Application.check0.executor": "Run",
-    "CMake Application.check1.executor": "Run",
-    "CMake Application.minnow_optimized.executor": "Run",
-    "CMake Application.reassembler_cap.executor": "Run",
-    "CMake Application.reassembler_dup.executor": "Run",
-    "CMake Application.reassembler_overlapping.executor": "Run",
-    "CMake Application.reassembler_single.executor": "Run",
-    "CMake Application.stream_copy.executor": "Run",
-    "CMake Application.tidy_tests__byte_stream_basics.cc.executor": "Run",
-    "CMake Application.tidy_tests__byte_stream_stress_test.cc.executor": "Run",
-    "CMake Application.tidy_tests__byte_stream_test_harness.hh.executor": "Run",
-    "CMake Application.webget.executor": "Run",
-    "CMake Debug.minnow.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.advertisement.text.has.clang-format": "true",
-    "cf.advertisement.text.overridden": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "ctest.advertisement.all.test.configuration.is.created": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/bourbaki0404/CS_Learning/minnow/CMakeLists.txt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;CMake Application.byte_stream_basics.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.byte_stream_capacity.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.byte_stream_many_writes.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.byte_stream_one_write.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.byte_stream_speed_test.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.byte_stream_stress_test.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.byte_stream_two_writes.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.check0.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.check1.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.minnow_optimized.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.reassembler_cap.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.reassembler_dup.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.reassembler_overlapping.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.reassembler_single.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.recv_close.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.recv_connect.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.recv_special.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.recv_transmit.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.recv_window.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.stream_copy.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.tidy_tests__byte_stream_basics.cc.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.tidy_tests__byte_stream_stress_test.cc.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.tidy_tests__byte_stream_test_harness.hh.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.webget.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.wrapping_integers_cmp.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.wrapping_integers_extra.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.wrapping_integers_roundtrip.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.wrapping_integers_unwrap.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.wrapping_integers_wrap.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Debug.minnow.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.advertisement.text.has.clang-format&quot;: &quot;true&quot;,
+    &quot;cf.advertisement.text.overridden&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;ctest.advertisement.all.test.configuration.is.created&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bourbaki0404/CS_Learning/minnow/CMakeLists.txt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="CMake Application.reassembler_cap">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunManager" selected="CMake Application.check0">
     <configuration name="minnow" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
     </configuration>
@@ -377,6 +504,11 @@
       </method>
     </configuration>
     <configuration name="NightlyUpdate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="NightlyUpdate" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -591,6 +723,146 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="recv_close" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_close" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_close">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_close_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_close_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_close_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_connect" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_connect" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_connect">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_connect_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_connect_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_connect_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_reorder" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_reorder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_reorder">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_reorder_more" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_reorder_more" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_reorder_more">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_reorder_more_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_reorder_more_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_reorder_more_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_reorder_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_reorder_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_reorder_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_special" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_special" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_special">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_special_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_special_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_special_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_transmit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_transmit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_transmit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_transmit_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_transmit_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_transmit_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_window" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_window" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_window">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_window_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="recv_window_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="recv_window_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_ack" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_ack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_ack">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_ack_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_ack_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_ack_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_close" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_close" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_close">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_close_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_close_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_close_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_connect" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_connect" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_connect">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_connect_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_connect_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_connect_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_extra" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_extra" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_extra">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_extra_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_extra_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_extra_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_retx" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_retx" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_retx">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_retx_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_retx_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_retx_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_transmit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_transmit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_transmit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_transmit_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_transmit_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_transmit_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_window" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_window" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_window">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_window_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_window_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_window_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="speed" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="speed" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -662,6 +934,36 @@
       </method>
     </configuration>
     <configuration name="tidy_src__reassembler.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__reassembler.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_src__tcp_receiver.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__tcp_receiver.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_src__tcp_receiver.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__tcp_receiver.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_src__tcp_sender.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__tcp_sender.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_src__tcp_sender.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__tcp_sender.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_src__wrapping_integers.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__wrapping_integers.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_src__wrapping_integers.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__wrapping_integers.hh" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -766,7 +1068,112 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tidy_tests__receiver_test_harness.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__receiver_test_harness.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__recv_close.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__recv_close.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__recv_connect.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__recv_connect.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__recv_reorder.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__recv_reorder.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__recv_reorder_more.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__recv_reorder_more.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__recv_special.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__recv_special.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__recv_transmit.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__recv_transmit.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__recv_window.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__recv_window.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__send_ack.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__send_ack.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__send_close.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__send_close.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__send_connect.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__send_connect.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__send_extra.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__send_extra.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__send_retx.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__send_retx.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__send_transmit.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__send_transmit.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__send_window.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__send_window.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__sender_test_harness.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__sender_test_harness.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tidy_tests__test_should_be.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__test_should_be.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__wrapping_integers_cmp.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__wrapping_integers_cmp.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__wrapping_integers_extra.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__wrapping_integers_extra.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__wrapping_integers_roundtrip.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__wrapping_integers_roundtrip.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__wrapping_integers_unwrap.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__wrapping_integers_unwrap.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__wrapping_integers_wrap.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__wrapping_integers_wrap.cc" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -851,12 +1258,42 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tidy_util__tcp_config.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_util__tcp_config.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_util__tcp_receiver_message.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_util__tcp_receiver_message.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_util__tcp_segment.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_util__tcp_segment.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_util__tcp_segment.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_util__tcp_segment.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_util__tcp_sender_message.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_util__tcp_sender_message.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tidy_util__tun.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_util__tun.cc" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="tidy_util__tun.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_util__tun.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_util__udinfo.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_util__udinfo.hh" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -881,7 +1318,57 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All CTest" type="CTestRunConfiguration" factoryName="CTestRun" PROGRAM_PARAMS="--extra-verbose" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$CMakeCurrentLocalGenerationDir$" PASS_PARENT_ENVS_2="true" RUN_PATH="$CTestCurrentExecutableName$" EXPLICIT_BUILD_TARGET_NAME="all" TEST_MODE="SUITE_TEST">
+    <configuration name="wrapping_integers_cmp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_cmp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_cmp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_cmp_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_cmp_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_cmp_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_extra" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_extra" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_extra">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_extra_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_extra_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_extra_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_roundtrip" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_roundtrip" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_roundtrip">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_roundtrip_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_roundtrip_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_roundtrip_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_unwrap" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_unwrap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_unwrap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_unwrap_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_unwrap_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_unwrap_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_wrap" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_wrap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_wrap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_wrap_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="wrapping_integers_wrap_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="wrapping_integers_wrap_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All CTest" type="CTestRunConfiguration" factoryName="CTestRun" PROGRAM_PARAMS="--extra-verbose" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$CMakeCurrentLocalGenerationDir$" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$CTestCurrentExecutableName$" EXPLICIT_BUILD_TARGET_NAME="all" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -903,6 +1390,12 @@
       <item itemvalue="CMake Application.tidy_src__byte_stream_helpers.cc" />
       <item itemvalue="CMake Application.tidy_src__reassembler.cc" />
       <item itemvalue="CMake Application.tidy_src__reassembler.hh" />
+      <item itemvalue="CMake Application.tidy_src__tcp_receiver.cc" />
+      <item itemvalue="CMake Application.tidy_src__tcp_receiver.hh" />
+      <item itemvalue="CMake Application.tidy_src__tcp_sender.cc" />
+      <item itemvalue="CMake Application.tidy_src__tcp_sender.hh" />
+      <item itemvalue="CMake Application.tidy_src__wrapping_integers.cc" />
+      <item itemvalue="CMake Application.tidy_src__wrapping_integers.hh" />
       <item itemvalue="CMake Application.tidy_tests__byte_stream_basics.cc" />
       <item itemvalue="CMake Application.tidy_tests__byte_stream_capacity.cc" />
       <item itemvalue="CMake Application.tidy_tests__byte_stream_many_writes.cc" />
@@ -923,7 +1416,28 @@
       <item itemvalue="CMake Application.tidy_tests__reassembler_speed_test.cc" />
       <item itemvalue="CMake Application.tidy_tests__reassembler_test_harness.hh" />
       <item itemvalue="CMake Application.tidy_tests__reassembler_win.cc" />
+      <item itemvalue="CMake Application.tidy_tests__receiver_test_harness.hh" />
+      <item itemvalue="CMake Application.tidy_tests__recv_close.cc" />
+      <item itemvalue="CMake Application.tidy_tests__recv_connect.cc" />
+      <item itemvalue="CMake Application.tidy_tests__recv_reorder.cc" />
+      <item itemvalue="CMake Application.tidy_tests__recv_reorder_more.cc" />
+      <item itemvalue="CMake Application.tidy_tests__recv_special.cc" />
+      <item itemvalue="CMake Application.tidy_tests__recv_transmit.cc" />
+      <item itemvalue="CMake Application.tidy_tests__recv_window.cc" />
+      <item itemvalue="CMake Application.tidy_tests__send_ack.cc" />
+      <item itemvalue="CMake Application.tidy_tests__send_close.cc" />
+      <item itemvalue="CMake Application.tidy_tests__send_connect.cc" />
+      <item itemvalue="CMake Application.tidy_tests__send_extra.cc" />
+      <item itemvalue="CMake Application.tidy_tests__send_retx.cc" />
+      <item itemvalue="CMake Application.tidy_tests__send_transmit.cc" />
+      <item itemvalue="CMake Application.tidy_tests__send_window.cc" />
+      <item itemvalue="CMake Application.tidy_tests__sender_test_harness.hh" />
       <item itemvalue="CMake Application.tidy_tests__test_should_be.hh" />
+      <item itemvalue="CMake Application.tidy_tests__wrapping_integers_cmp.cc" />
+      <item itemvalue="CMake Application.tidy_tests__wrapping_integers_extra.cc" />
+      <item itemvalue="CMake Application.tidy_tests__wrapping_integers_roundtrip.cc" />
+      <item itemvalue="CMake Application.tidy_tests__wrapping_integers_unwrap.cc" />
+      <item itemvalue="CMake Application.tidy_tests__wrapping_integers_wrap.cc" />
       <item itemvalue="CMake Application.tidy_util__address.cc" />
       <item itemvalue="CMake Application.tidy_util__address.hh" />
       <item itemvalue="CMake Application.tidy_util__checksum.hh" />
@@ -940,8 +1454,14 @@
       <item itemvalue="CMake Application.tidy_util__random.hh" />
       <item itemvalue="CMake Application.tidy_util__socket.cc" />
       <item itemvalue="CMake Application.tidy_util__socket.hh" />
+      <item itemvalue="CMake Application.tidy_util__tcp_config.hh" />
+      <item itemvalue="CMake Application.tidy_util__tcp_receiver_message.hh" />
+      <item itemvalue="CMake Application.tidy_util__tcp_segment.cc" />
+      <item itemvalue="CMake Application.tidy_util__tcp_segment.hh" />
+      <item itemvalue="CMake Application.tidy_util__tcp_sender_message.hh" />
       <item itemvalue="CMake Application.tidy_util__tun.cc" />
       <item itemvalue="CMake Application.tidy_util__tun.hh" />
+      <item itemvalue="CMake Application.tidy_util__udinfo.hh" />
       <item itemvalue="CMake Application.check0" />
       <item itemvalue="CMake Application.check1" />
       <item itemvalue="CMake Application.check2" />
@@ -1012,7 +1532,45 @@
       <item itemvalue="CMake Application.reassembler_speed_test" />
       <item itemvalue="CMake Application.reassembler_win" />
       <item itemvalue="CMake Application.reassembler_win_sanitized" />
+      <item itemvalue="CMake Application.recv_close" />
+      <item itemvalue="CMake Application.recv_close_sanitized" />
+      <item itemvalue="CMake Application.recv_connect" />
+      <item itemvalue="CMake Application.recv_connect_sanitized" />
+      <item itemvalue="CMake Application.recv_reorder" />
+      <item itemvalue="CMake Application.recv_reorder_more" />
+      <item itemvalue="CMake Application.recv_reorder_more_sanitized" />
+      <item itemvalue="CMake Application.recv_reorder_sanitized" />
+      <item itemvalue="CMake Application.recv_special" />
+      <item itemvalue="CMake Application.recv_special_sanitized" />
+      <item itemvalue="CMake Application.recv_transmit" />
+      <item itemvalue="CMake Application.recv_transmit_sanitized" />
+      <item itemvalue="CMake Application.recv_window" />
+      <item itemvalue="CMake Application.recv_window_sanitized" />
+      <item itemvalue="CMake Application.send_ack" />
+      <item itemvalue="CMake Application.send_ack_sanitized" />
+      <item itemvalue="CMake Application.send_close" />
+      <item itemvalue="CMake Application.send_close_sanitized" />
+      <item itemvalue="CMake Application.send_connect" />
+      <item itemvalue="CMake Application.send_connect_sanitized" />
+      <item itemvalue="CMake Application.send_extra" />
+      <item itemvalue="CMake Application.send_extra_sanitized" />
+      <item itemvalue="CMake Application.send_retx" />
+      <item itemvalue="CMake Application.send_retx_sanitized" />
+      <item itemvalue="CMake Application.send_transmit" />
+      <item itemvalue="CMake Application.send_transmit_sanitized" />
+      <item itemvalue="CMake Application.send_window" />
+      <item itemvalue="CMake Application.send_window_sanitized" />
       <item itemvalue="CMake Application.speed_testing" />
+      <item itemvalue="CMake Application.wrapping_integers_cmp" />
+      <item itemvalue="CMake Application.wrapping_integers_cmp_sanitized" />
+      <item itemvalue="CMake Application.wrapping_integers_extra" />
+      <item itemvalue="CMake Application.wrapping_integers_extra_sanitized" />
+      <item itemvalue="CMake Application.wrapping_integers_roundtrip" />
+      <item itemvalue="CMake Application.wrapping_integers_roundtrip_sanitized" />
+      <item itemvalue="CMake Application.wrapping_integers_unwrap" />
+      <item itemvalue="CMake Application.wrapping_integers_unwrap_sanitized" />
+      <item itemvalue="CMake Application.wrapping_integers_wrap" />
+      <item itemvalue="CMake Application.wrapping_integers_wrap_sanitized" />
       <item itemvalue="CMake Application.util_debug" />
       <item itemvalue="CMake Application.util_optimized" />
       <item itemvalue="CMake Application.util_sanitized" />
@@ -1033,7 +1591,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732792233254</updated>
-      <workItem from="1732792234328" duration="37739000" />
+      <workItem from="1732792234328" duration="61224000" />
+      <workItem from="1732963991206" duration="4782000" />
     </task>
     <servers />
   </component>
@@ -1072,9 +1631,29 @@
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/reassembler.cc</url>
-          <line>36</line>
-          <option name="timeStamp" value="68" />
+          <url>file://$PROJECT_DIR$/tests/wrapping_integers_unwrap.cc</url>
+          <line>30</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/recv_connect.cc</url>
+          <line>102</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/recv_transmit.cc</url>
+          <line>21</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/recv_window.cc</url>
+          <line>100</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/recv_close.cc</url>
+          <line>22</line>
+          <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

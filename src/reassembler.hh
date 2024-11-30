@@ -45,7 +45,6 @@ public:
 
 private:
   ByteStream output_; // the Reassembler writes to this ByteStream
-  uint64_t bytes_unassembled{0}; // the next index within the bytestream, before this all the bytes are commited
   uint64_t eol{UINT64_MAX};
   std::list<std::pair<uint64_t, std::string>> intervals{};
 };

@@ -7,7 +7,7 @@ void Reassembler::insert( uint64_t first_index, string data, bool is_last_substr
     if(is_last_substring){
         eol = first_index + data.size();
     }
-    uint64_t windowBegin = bytes_unassembled;
+    uint64_t windowBegin = output_.writer().bytes_pushed();
     uint64_t windowEnd = windowBegin + output_.writer().available_capacity();
     uint64_t last_index = first_index + data.size();
     if(first_index < windowBegin) {
@@ -19,12 +19,12 @@ void Reassembler::insert( uint64_t first_index, string data, bool is_last_substr
         last_index = windowEnd;
     }
     if(data.empty()){
-        if(bytes_unassembled >= eol){
+        if(output_.writer().bytes_pushed() >= eol){
             output_.writer().close();
         }
         return;
     }
-    if(intervals.empty()){
+    if(intervals.empty() && first_index <= windowEnd){
         intervals.emplace_back(first_index, data);
     }
     auto it = intervals.begin();
@@ -53,14 +53,14 @@ void Reassembler::insert( uint64_t first_index, string data, bool is_last_substr
         data = leftmostIntData + data + rightmostIntDat;
         intervals.insert(it, {leftmostIntFirst, data});
     }else{
-        intervals.emplace_back(first_index, data);
+        if(first_index <= windowEnd)
+            intervals.emplace_back(first_index, data);
     }
-    if(intervals.begin()->first == windowBegin){
+    if(!intervals.empty() && intervals.begin()->first == windowBegin){
         data = intervals.begin()->second;
         output_.writer().push(data);
-        bytes_unassembled += data.size();
         intervals.pop_front();
-        if(bytes_unassembled >= eol){
+        if(output_.writer().bytes_pushed() >= eol){
             output_.writer().close();
         }
     }

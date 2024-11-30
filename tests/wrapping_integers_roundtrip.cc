@@ -18,6 +18,7 @@ void check_roundtrip( const Wrap32 isn, const uint64_t value, const uint64_t che
     ss << "  unwrap(wrap(value, isn), isn, checkpoint) did not equal value\n";
     ss << "  where value = " << value << ", isn = " << isn << ", and checkpoint = " << checkpoint << "\n";
     ss << "  (Difference between value and checkpoint is " << value - checkpoint << ".)\n";
+    ss << " function returns " << Wrap32::wrap( value, isn ).unwrap( isn, checkpoint ) << ".\n";
     throw runtime_error( ss.str() );
   }
 }
