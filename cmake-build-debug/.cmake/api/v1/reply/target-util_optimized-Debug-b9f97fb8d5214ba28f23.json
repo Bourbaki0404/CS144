@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/libminnow_sanitized.a"
+			"path" : "util/libutil_optimized.a"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"src/CMakeLists.txt",
+			"util/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 6,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
@@ -64,15 +64,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"fragment" : "-fno-sanitize-recover=all"
-				},
-				{
-					"backtrace" : 2,
-					"fragment" : "-fsanitize=undefined"
-				},
-				{
-					"backtrace" : 2,
-					"fragment" : "-fsanitize=address"
+					"fragment" : "-O2"
 				}
 			],
 			"includes" : 
@@ -102,17 +94,21 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6,
+				7,
+				8,
+				9
 			]
 		}
 	],
-	"id" : "minnow_sanitized::@145eef247bfb46b6828c",
-	"name" : "minnow_sanitized",
-	"nameOnDisk" : "libminnow_sanitized.a",
+	"id" : "util_optimized::@5865449b717dd869d2cd",
+	"name" : "util_optimized",
+	"nameOnDisk" : "libutil_optimized.a",
 	"paths" : 
 	{
-		"build" : "src",
-		"source" : "src"
+		"build" : "util",
+		"source" : "util"
 	},
 	"sourceGroups" : 
 	[
@@ -125,7 +121,11 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6,
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -134,37 +134,61 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/byte_stream.cc",
+			"path" : "util/address.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/byte_stream_helpers.cc",
+			"path" : "util/eventloop.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/reassembler.cc",
+			"path" : "util/file_descriptor.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/tcp_receiver.cc",
+			"path" : "util/ipv4_header.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/tcp_sender.cc",
+			"path" : "util/random.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/wrapping_integers.cc",
+			"path" : "util/socket.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "util/tcp_over_ip.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "util/tcp_segment.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "util/tun.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "util/tuntap_adapter.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

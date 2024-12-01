@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/libminnow_optimized.a"
+			"path" : "src/libminnow_sanitized.a"
 		}
 	],
 	"backtrace" : 1,
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 9,
+				"line" : 6,
 				"parent" : 0
 			},
 			{
@@ -64,7 +64,15 @@
 				},
 				{
 					"backtrace" : 2,
-					"fragment" : "-O2"
+					"fragment" : "-fno-sanitize-recover=all"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fsanitize=undefined"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fsanitize=address"
 				}
 			],
 			"includes" : 
@@ -94,13 +102,14 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
-	"id" : "minnow_optimized::@145eef247bfb46b6828c",
-	"name" : "minnow_optimized",
-	"nameOnDisk" : "libminnow_optimized.a",
+	"id" : "minnow_sanitized::@145eef247bfb46b6828c",
+	"name" : "minnow_sanitized",
+	"nameOnDisk" : "libminnow_sanitized.a",
 	"paths" : 
 	{
 		"build" : "src",
@@ -117,7 +126,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
@@ -139,6 +149,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/reassembler.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/tcp_minnow_socket.cc",
 			"sourceGroupIndex" : 0
 		},
 		{

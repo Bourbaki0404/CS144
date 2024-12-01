@@ -11,15 +11,11 @@ void TCPReceiver::receive( TCPSenderMessage message )
     if(message.SYN && state == LISTEN){
         SenderISN = message.seqno;
         SenderSN = message.sequence_length();
-        state = SYN_RECEIVED;
+        state = ESTABLISHED;
         unassembledIdx = 0;
         uint64_t currentIdx = message.seqno.unwrap(SenderISN, unassembledIdx);
         reassembler_.insert(currentIdx, message.payload, message.FIN);
-    }else if(state == SYN_RECEIVED){
-        if(!(message.SYN))
-            state = ESTABLISHED;
-    }
-    if(state == ESTABLISHED || state == WAIT_CLOSE){
+    }else if(state == ESTABLISHED || state == WAIT_CLOSE){
         uint64_t currentIdx = message.seqno.unwrap(SenderISN, unassembledIdx) - SenderSN + unassembledIdx;
         uint64_t bytes_pushed = reassembler_.writer().bytes_pushed();
         reassembler_.insert(currentIdx, message.payload, message.FIN);
@@ -38,7 +34,7 @@ TCPReceiverMessage TCPReceiver::send() const
       // Your code here.
       TCPReceiverMessage msg;
       msg.window_size = std::min(reassembler_.writer().available_capacity(), (uint64_t)UINT16_MAX);
-      if(state == ESTABLISHED || state == SYN_RECEIVED)
+      if(state == ESTABLISHED)
           msg.ackno = Wrap32::wrap(SenderSN, SenderISN);
       if(state == WAIT_CLOSE || state == CLOSED){
           if(reassembler_.writer().is_closed())

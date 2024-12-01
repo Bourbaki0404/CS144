@@ -1,13 +1,13 @@
 compile 0 0
 t_webget 26 0.050207
-byte_stream_basics 20 0.000352737
-byte_stream_capacity 15 0.000477995
-byte_stream_one_write 11 0.000684863
-byte_stream_two_writes 11 0.000687929
-byte_stream_many_writes 9 0.00365897
-byte_stream_stress_test 8 0.00156679
+byte_stream_basics 21 0.000332326
+byte_stream_capacity 16 0.000460431
+byte_stream_one_write 12 0.000609124
+byte_stream_two_writes 12 0.000614782
+byte_stream_many_writes 10 0.00297442
+byte_stream_stress_test 9 0.00140799
 compile 0 0
-byte_stream_speed_test 5 0.0144697
+byte_stream_speed_test 5 0
 compile 0 0
 compile 0 0
 compile 0 0
@@ -47,15 +47,15 @@ compile 0 0
 compile 0 0
 compile 0 0
 compile 0 0
-reassembler_single 2 0.00404854
-reassembler_cap 1 0.0085861
-reassembler_seq 1 0.0113453
-reassembler_dup 1 0.0221142
-reassembler_holes 1 0.00850744
-reassembler_overlapping 1 0.00947269
-reassembler_win 1 0.242055
+reassembler_single 3 0.00244111
+reassembler_cap 2 0.00387553
+reassembler_seq 2 0.00517028
+reassembler_dup 2 0.0100659
+reassembler_holes 2 0.00383017
+reassembler_overlapping 2 0.00416469
+reassembler_win 2 0.115967
 compile 0 0
-reassembler_speed_test 1 0.130211
+reassembler_speed_test 1 0
 compile 0 0
 compile 0 0
 compile 0 0
@@ -86,6 +86,28 @@ compile 0 0
 compile 0 0
 compile 0 0
 compile 0 0
-compile with bug-checkers 1 1.64412
-compile with optimization 1 0.551879
+compile 0 0
+compile 0 0
+compile with bug-checkers 1 7.98875
+wrapping_integers_cmp 1 0.00916146
+wrapping_integers_wrap 1 0.00548411
+wrapping_integers_unwrap 1 0.00561434
+wrapping_integers_roundtrip 1 0.384536
+wrapping_integers_extra 1 0.0715215
+recv_connect 1 0.00792591
+recv_transmit 1 0.196133
+recv_window 1 0.00799727
+recv_reorder 1 0.0110267
+recv_reorder_more 1 0.619971
+recv_close 1 0.00937588
+recv_special 1 0.0115839
+send_connect 1 0.0100054
+send_transmit 1 0.262325
+send_retx 1 0.0110779
+send_window 1 0.0649093
+send_ack 1 0.0108859
+send_close 0 0
+send_extra 0 0
+compile with optimization 0 0
 ---
+send_close
