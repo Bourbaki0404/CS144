@@ -1,3 +1,384 @@
-Start testing: Dec 01 23:29 CST
+Start testing: Dec 02 10:51 CST
 ----------------------------------------------------------
-End testing: Dec 01 23:29 CST
+1/39 Testing: compile with bug-checkers
+1/39 Test: compile with bug-checkers
+Command: "/home/bourbaki0404/clion-2024.1.1/bin/cmake/linux/x64/bin/cmake" "--build" "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug" "-t" "functionality_testing" "webget"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"compile with bug-checkers" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+[1/71] Building CXX object src/CMakeFiles/minnow_debug.dir/network_interface.cc.o
+[2/71] Linking CXX static library src/libminnow_debug.a
+[3/71] Linking CXX executable tests/wrapping_integers_cmp
+[4/71] Linking CXX executable tests/wrapping_integers_wrap
+[5/71] Linking CXX executable tests/wrapping_integers_roundtrip
+[6/71] Linking CXX executable tests/reassembler_single
+[7/71] Linking CXX executable tests/reassembler_holes
+[8/71] Linking CXX executable tests/byte_stream_basics
+[9/71] Linking CXX executable tests/byte_stream_two_writes
+[10/71] Linking CXX executable tests/byte_stream_capacity
+[11/71] Linking CXX executable tests/reassembler_win
+[12/71] Linking CXX executable tests/byte_stream_many_writes
+[13/71] Linking CXX executable tests/byte_stream_stress_test
+[14/71] Linking CXX executable tests/reassembler_dup
+[15/71] Linking CXX executable tests/wrapping_integers_unwrap
+[16/71] Linking CXX executable tests/byte_stream_one_write
+[17/71] Linking CXX executable tests/reassembler_seq
+[18/71] Linking CXX executable tests/reassembler_cap
+[19/71] Linking CXX executable tests/wrapping_integers_extra
+[20/71] Linking CXX executable tests/reassembler_overlapping
+[21/71] Linking CXX executable tests/recv_connect
+[22/71] Linking CXX executable tests/recv_transmit
+[23/71] Linking CXX executable tests/recv_window
+[24/71] Linking CXX executable tests/recv_reorder
+[25/71] Linking CXX executable tests/send_retx
+[26/71] Linking CXX executable tests/send_transmit
+[27/71] Linking CXX executable tests/recv_special
+[28/71] Linking CXX executable tests/send_connect
+[29/71] Building CXX object src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.o
+[30/71] Linking CXX executable tests/send_window
+[31/71] Linking CXX executable tests/recv_close
+[32/71] Linking CXX executable tests/send_ack
+[33/71] Linking CXX executable tests/recv_reorder_more
+[34/71] Linking CXX executable tests/send_close
+[35/71] Linking CXX executable tests/send_extra
+[36/71] Linking CXX executable tests/net_interface
+[37/71] Linking CXX static library src/libminnow_sanitized.a
+[38/71] Linking CXX executable apps/webget
+[39/71] Linking CXX executable tests/wrapping_integers_cmp_sanitized
+[40/71] Linking CXX executable tests/byte_stream_stress_test_sanitized
+[41/71] Linking CXX executable tests/wrapping_integers_roundtrip_sanitized
+[42/71] Linking CXX executable tests/byte_stream_two_writes_sanitized
+[43/71] Linking CXX executable tests/reassembler_holes_sanitized
+[44/71] Linking CXX executable tests/byte_stream_capacity_sanitized
+[45/71] Linking CXX executable tests/reassembler_seq_sanitized
+[46/71] Linking CXX executable tests/reassembler_overlapping_sanitized
+[47/71] Linking CXX executable tests/byte_stream_many_writes_sanitized
+[48/71] Linking CXX executable tests/reassembler_single_sanitized
+[49/71] Linking CXX executable tests/wrapping_integers_unwrap_sanitized
+[50/71] Linking CXX executable tests/reassembler_dup_sanitized
+[51/71] Linking CXX executable tests/reassembler_win_sanitized
+[52/71] Linking CXX executable tests/byte_stream_basics_sanitized
+[53/71] Linking CXX executable tests/byte_stream_one_write_sanitized
+[54/71] Linking CXX executable tests/wrapping_integers_wrap_sanitized
+[55/71] Linking CXX executable tests/reassembler_cap_sanitized
+[56/71] Linking CXX executable tests/wrapping_integers_extra_sanitized
+[57/71] Linking CXX executable tests/recv_connect_sanitized
+[58/71] Linking CXX executable tests/send_connect_sanitized
+[59/71] Linking CXX executable tests/recv_window_sanitized
+[60/71] Linking CXX executable tests/recv_reorder_more_sanitized
+[61/71] Linking CXX executable tests/recv_close_sanitized
+[62/71] Linking CXX executable tests/recv_transmit_sanitized
+[63/71] Linking CXX executable tests/send_retx_sanitized
+[64/71] Linking CXX executable tests/recv_special_sanitized
+[65/71] Linking CXX executable tests/send_transmit_sanitized
+[66/71] Linking CXX executable tests/send_window_sanitized
+[67/71] Linking CXX executable tests/send_ack_sanitized
+[68/71] Linking CXX executable tests/recv_reorder_sanitized
+[69/71] Linking CXX executable tests/send_extra_sanitized
+[70/71] Linking CXX executable tests/net_interface_sanitized
+[71/71] Linking CXX executable tests/send_close_sanitized
+<end of output>
+Test time =   2.29 sec
+----------------------------------------------------------
+Test Passed.
+"compile with bug-checkers" end time: Dec 02 10:51 CST
+"compile with bug-checkers" time elapsed: 00:00:02
+----------------------------------------------------------
+
+3/39 Testing: byte_stream_basics
+3/39 Test: byte_stream_basics
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/byte_stream_basics_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"byte_stream_basics" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"byte_stream_basics" end time: Dec 02 10:51 CST
+"byte_stream_basics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/39 Testing: byte_stream_capacity
+4/39 Test: byte_stream_capacity
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/byte_stream_capacity_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"byte_stream_capacity" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"byte_stream_capacity" end time: Dec 02 10:51 CST
+"byte_stream_capacity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/39 Testing: byte_stream_one_write
+5/39 Test: byte_stream_one_write
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/byte_stream_one_write_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"byte_stream_one_write" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"byte_stream_one_write" end time: Dec 02 10:51 CST
+"byte_stream_one_write" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/39 Testing: byte_stream_two_writes
+6/39 Test: byte_stream_two_writes
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/byte_stream_two_writes_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"byte_stream_two_writes" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"byte_stream_two_writes" end time: Dec 02 10:51 CST
+"byte_stream_two_writes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/39 Testing: byte_stream_many_writes
+7/39 Test: byte_stream_many_writes
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/byte_stream_many_writes_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"byte_stream_many_writes" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"byte_stream_many_writes" end time: Dec 02 10:51 CST
+"byte_stream_many_writes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/39 Testing: byte_stream_stress_test
+8/39 Test: byte_stream_stress_test
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/byte_stream_stress_test_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"byte_stream_stress_test" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"byte_stream_stress_test" end time: Dec 02 10:51 CST
+"byte_stream_stress_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/39 Testing: reassembler_single
+9/39 Test: reassembler_single
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/reassembler_single_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"reassembler_single" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"reassembler_single" end time: Dec 02 10:51 CST
+"reassembler_single" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/39 Testing: reassembler_cap
+10/39 Test: reassembler_cap
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/reassembler_cap_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"reassembler_cap" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"reassembler_cap" end time: Dec 02 10:51 CST
+"reassembler_cap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/39 Testing: reassembler_seq
+11/39 Test: reassembler_seq
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/reassembler_seq_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"reassembler_seq" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"reassembler_seq" end time: Dec 02 10:51 CST
+"reassembler_seq" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/39 Testing: reassembler_dup
+12/39 Test: reassembler_dup
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/reassembler_dup_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"reassembler_dup" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"reassembler_dup" end time: Dec 02 10:51 CST
+"reassembler_dup" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/39 Testing: reassembler_holes
+13/39 Test: reassembler_holes
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/reassembler_holes_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"reassembler_holes" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"reassembler_holes" end time: Dec 02 10:51 CST
+"reassembler_holes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/39 Testing: reassembler_overlapping
+14/39 Test: reassembler_overlapping
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/reassembler_overlapping_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"reassembler_overlapping" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"reassembler_overlapping" end time: Dec 02 10:51 CST
+"reassembler_overlapping" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/39 Testing: reassembler_win
+15/39 Test: reassembler_win
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/reassembler_win_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"reassembler_win" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"reassembler_win" end time: Dec 02 10:51 CST
+"reassembler_win" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/39 Testing: wrapping_integers_cmp
+16/39 Test: wrapping_integers_cmp
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/wrapping_integers_cmp_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"wrapping_integers_cmp" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"wrapping_integers_cmp" end time: Dec 02 10:51 CST
+"wrapping_integers_cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/39 Testing: wrapping_integers_wrap
+17/39 Test: wrapping_integers_wrap
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/wrapping_integers_wrap_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"wrapping_integers_wrap" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"wrapping_integers_wrap" end time: Dec 02 10:51 CST
+"wrapping_integers_wrap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/39 Testing: wrapping_integers_unwrap
+18/39 Test: wrapping_integers_unwrap
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/wrapping_integers_unwrap_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"wrapping_integers_unwrap" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"wrapping_integers_unwrap" end time: Dec 02 10:51 CST
+"wrapping_integers_unwrap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/39 Testing: wrapping_integers_roundtrip
+19/39 Test: wrapping_integers_roundtrip
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/wrapping_integers_roundtrip_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"wrapping_integers_roundtrip" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.39 sec
+----------------------------------------------------------
+Test Passed.
+"wrapping_integers_roundtrip" end time: Dec 02 10:51 CST
+"wrapping_integers_roundtrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/39 Testing: wrapping_integers_extra
+20/39 Test: wrapping_integers_extra
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/wrapping_integers_extra_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"wrapping_integers_extra" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"wrapping_integers_extra" end time: Dec 02 10:51 CST
+"wrapping_integers_extra" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/39 Testing: recv_connect
+21/39 Test: recv_connect
+Command: "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug/tests/recv_connect_sanitized"
+Directory: /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug
+"recv_connect" start time: Dec 02 10:51 CST
+Output:
+----------------------------------------------------------
+
+The test "connect 6" failed after these steps:
+
+  0.	Initialized TCPReceiver with capacity=4000
+  1.	Action: receive segment: (seqno=Wrap32<5> +SYN +FIN) with ackno expected
+  ***** Unsuccessful Expectation: is_closed = true *****
+
+ExpectationViolation: The object should have had is_closed = true, but instead it was false.
+
+The test "connect 6" failed.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"recv_connect" end time: Dec 02 10:51 CST
+"recv_connect" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 02 10:51 CST

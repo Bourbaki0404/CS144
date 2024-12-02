@@ -31,17 +31,17 @@ void TCPReceiver::receive( TCPSenderMessage message )
 
 TCPReceiverMessage TCPReceiver::send() const
 {
-      // Your code here.
-      TCPReceiverMessage msg;
-      msg.window_size = std::min(reassembler_.writer().available_capacity(), (uint64_t)UINT16_MAX);
-      if(state == ESTABLISHED)
-          msg.ackno = Wrap32::wrap(SenderSN, SenderISN);
-      if(state == WAIT_CLOSE || state == CLOSED){
-          if(reassembler_.writer().is_closed())
+    // Your code here.
+    TCPReceiverMessage msg;
+    msg.window_size = std::min(reassembler_.writer().available_capacity(), (uint64_t)UINT16_MAX);
+    if(state == ESTABLISHED)
+        msg.ackno = Wrap32::wrap(SenderSN, SenderISN);
+    if(state == WAIT_CLOSE || state == CLOSED){
+        if(reassembler_.writer().is_closed())
             msg.ackno = Wrap32::wrap(SenderSN + 1, SenderISN);
-          else
+        else
             msg.ackno = Wrap32::wrap(SenderSN, SenderISN);
-      }
-      msg.RST = reassembler_.writer().has_error() || reassembler_.reader().has_error();
-      return msg;
+    }
+    msg.RST = reassembler_.writer().has_error() || reassembler_.reader().has_error();
+    return msg;
 }

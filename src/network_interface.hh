@@ -5,6 +5,7 @@
 #include "address.hh"
 #include "ethernet_frame.hh"
 #include "ipv4_datagram.hh"
+#include <map>
 
 // A "network interface" that connects IP (the internet layer, or network layer)
 // with Ethernet (the network access layer, or link layer).
@@ -27,6 +28,51 @@
 // the network interface passes it up the stack. If it's an ARP
 // request or reply, the network interface processes the frame
 // and learns or replies as necessary.
+
+class ARPCache {
+private:
+    struct ARPEntry {
+        EthernetAddress mac;
+        uint64_t timestamp; // Time in milliseconds
+    };
+
+    std::unordered_map<uint32_t, ARPEntry> table{};
+    const uint64_t timeout = 30 * 1000; // 30 seconds in milliseconds
+
+
+public:
+    void addEntry(uint32_t ip, const EthernetAddress& mac, uint64_t timestamp) {
+        ARPEntry entry;
+        entry.mac = mac;
+        entry.timestamp = timestamp; // Set the timestamp from the argument
+        table[ip] = entry;
+    }
+
+    bool getEntry(uint32_t ip, EthernetAddress& mac, uint64_t current_time) {
+        auto it = table.find(ip);
+        if (it != table.end()) {
+            // Use the provided current_time for comparison
+            if ((current_time - it->second.timestamp) < timeout) {
+                mac = it->second.mac;
+                return true;
+            } else {
+                table.erase(it); // Remove expired entry
+            }
+        }
+        return false;
+    }
+
+    void cleanUp(uint64_t current_time) {
+        for (auto it = table.begin(); it != table.end();) {
+            if ((current_time - it->second.timestamp) >= timeout) {
+                it = table.erase(it); // Remove expired entries
+            } else {
+                ++it;
+            }
+        }
+    }
+};
+
 class NetworkInterface
 {
 public:
@@ -69,6 +115,14 @@ private:
   // Human-readable name of the interface
   std::string name_;
 
+    struct ARPPacket {
+        uint16_t opcode;              // Operation code (1 = request, 2 = reply)
+        EthernetAddress sender_mac;   // Sender MAC address
+        uint32_t sender_ip;           // Sender IP address
+        EthernetAddress target_mac;    // Target MAC address (0s in request)
+        uint32_t target_ip;           // Target IP address
+    };
+
   // The physical output port (+ a helper function `transmit` that uses it to send an Ethernet frame)
   std::shared_ptr<OutputPort> port_;
   void transmit( const EthernetFrame& frame ) const { port_->transmit( *this, frame ); }
@@ -81,4 +135,8 @@ private:
 
   // Datagrams that have been received
   std::queue<InternetDatagram> datagrams_received_ {};
+
+  ARPCache ARP_cache {};
+  uint64_t currentTimeStamp {};
+  std::map<uint32_t, InternetDatagram> sendQueue {};
 };

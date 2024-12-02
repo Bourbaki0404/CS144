@@ -25,11 +25,36 @@ NetworkInterface::NetworkInterface( string_view name,
 //! \param[in] next_hop the IP address of the interface to send it to (typically a router or default gateway, but
 //! may also be another host if directly connected to the same network as the destination) Note: the Address type
 //! can be converted to a uint32_t (raw 32-bit IP address) by using the Address::ipv4_numeric() method.
+
 void NetworkInterface::send_datagram( const InternetDatagram& dgram, const Address& next_hop )
 {
-  // Your code here.
-  (void)dgram;
-  (void)next_hop;
+    uint32_t dst_ip = dgram.header.dst;
+    EthernetAddress dst_eth;
+    if(!ARP_cache.getEntry(dst_ip, dst_eth, currentTimeStamp)){
+        EthernetFrame ARPRequest {
+                .header = {
+                        .dst = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},
+                        .src = ethernet_address_,
+                        .type = EthernetHeader::TYPE_ARP
+                },
+//                .payload = ;
+        };
+        transmit(ARPRequest);
+        sendQueue.insert({dst_ip, dgram});
+        return;
+    }
+    EthernetFrame dataFrame {
+            .header = {
+                    .dst = dst_eth,
+                    .src = ethernet_address_,
+                    .type = EthernetHeader::TYPE_IPv4
+            },
+            .payload = serialize(dgram)
+    };
+    (void) next_hop;
+
+
+    transmit(dataFrame);
 }
 
 //! \param[in] frame the incoming Ethernet frame
@@ -42,6 +67,5 @@ void NetworkInterface::recv_frame( const EthernetFrame& frame )
 //! \param[in] ms_since_last_tick the number of milliseconds since the last call to this method
 void NetworkInterface::tick( const size_t ms_since_last_tick )
 {
-  // Your code here.
-  (void)ms_since_last_tick;
+    currentTimeStamp += ms_since_last_tick;
 }
