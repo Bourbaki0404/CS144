@@ -87,6 +87,7 @@
       <config projectName="minnow" targetName="reassembler_cap" />
       <config projectName="minnow" targetName="tidy_src__tcp_minnow_socket.cc" />
       <config projectName="minnow" targetName="send_window" />
+      <config projectName="minnow" targetName="tidy_tests__router.cc" />
       <config projectName="minnow" targetName="util_optimized" />
       <config projectName="minnow" targetName="tidy_tests__send_window.cc" />
       <config projectName="minnow" targetName="tidy_apps__bidirectional_stream_copy.hh" />
@@ -96,7 +97,9 @@
       <config projectName="minnow" targetName="tidy_tests__recv_transmit.cc" />
       <config projectName="minnow" targetName="recv_connect" />
       <config projectName="minnow" targetName="util_sanitized" />
+      <config projectName="minnow" targetName="router" />
       <config projectName="minnow" targetName="tidy_src__tcp_sender.hh" />
+      <config projectName="minnow" targetName="router_sanitized" />
       <config projectName="minnow" targetName="minnow_testing_debug" />
       <config projectName="minnow" targetName="wrapping_integers_wrap_sanitized" />
       <config projectName="minnow" targetName="send_transmit" />
@@ -138,6 +141,7 @@
       <config projectName="minnow" targetName="NightlyBuild" />
       <config projectName="minnow" targetName="reassembler_holes" />
       <config projectName="minnow" targetName="tidy_tests__reassembler_overlapping.cc" />
+      <config projectName="minnow" targetName="tidy_src__router.cc" />
       <config projectName="minnow" targetName="tidy_util__tun.hh" />
       <config projectName="minnow" targetName="tidy_util__arp_message.hh" />
       <config projectName="minnow" targetName="check6" />
@@ -207,6 +211,7 @@
       <config projectName="minnow" targetName="tidy_tests__byte_stream_capacity.cc" />
       <config projectName="minnow" targetName="ExperimentalUpdate" />
       <config projectName="minnow" targetName="send_retx_sanitized" />
+      <config projectName="minnow" targetName="tidy_src__router.hh" />
       <config projectName="minnow" targetName="tidy_src__network_interface.cc" />
       <config projectName="minnow" targetName="ExperimentalTest" />
       <config projectName="minnow" targetName="recv_reorder_more" />
@@ -243,23 +248,17 @@
   <component name="ChangeListManager">
     <list default="true" id="fe688d10-cedf-4fb8-a4dd-a4f3df487bd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/webget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/apps/webget.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fd880ae0a3b42f37ea87.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-01T15-29-52-0608.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-byte_stream_speed_test-Debug-d8ae8d1d5158bc71cb49.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-check4-Debug-493f61008d40262a85d5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-check5-Debug-1860a586aed75113d4e0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-functionality_testing-Debug-cf18a251cb9ce6b6b164.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_debug-Debug-0e7feedc7300d3672ed9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_optimized-Debug-725094a559a67b1cc059.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_sanitized-Debug-a869bdb662afd5901198.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-reassembler_speed_test-Debug-4a9598064a3afafe3160.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-speed_testing-Debug-a35e49a69f3132cab82e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-tidy-Debug-9966d980cf5b1eaed46f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-tidy-all-Debug-977cc3fe405920519d88.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-util_debug-Debug-da4372fa1790e52da59d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-util_optimized-Debug-b9f97fb8d5214ba28f23.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-util_sanitized-Debug-810d3eeda9f2f4a1d589.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3d7e7eae01a82c2a9fc6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-01T16-23-41-0296.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-byte_stream_speed_test-Debug-f868091515f199ea9ce0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-functionality_testing-Debug-81a311a97d11bbf4f92a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_debug-Debug-2ea0871526a687023a3f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_optimized-Debug-ffd1e29e3b8e9559845d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minnow_sanitized-Debug-9f1f8ff3a44440f027e6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-reassembler_speed_test-Debug-0e9e17b6043da40d50f4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-speed_testing-Debug-ed5af9bbbc77e3d10ecf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-tidy-Debug-a87dc61866a78635e687.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-tidy-all-Debug-694180057e47e87f7ea9.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
@@ -273,20 +272,25 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/apps/webget" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/apps/webget" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/network_interface.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/network_interface.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/reassembler.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/reassembler.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/tcp_receiver.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/tcp_receiver.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/tcp_sender.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_debug.dir/tcp_sender.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/reassembler.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/reassembler.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/tcp_receiver.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/tcp_receiver.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/tcp_sender.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/minnow_sanitized.dir/tcp_sender.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_debug.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_debug.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_optimized.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_optimized.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_sanitized.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libminnow_sanitized.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_cap.dir/reassembler_cap.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_cap.dir/reassembler_cap.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_cap_sanitized.dir/reassembler_cap.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_cap_sanitized.dir/reassembler_cap.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_overlapping.dir/reassembler_overlapping.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_overlapping.dir/reassembler_overlapping.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_overlapping_sanitized.dir/reassembler_overlapping.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_overlapping_sanitized.dir/reassembler_overlapping.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_speed_test.dir/reassembler_speed_test.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/reassembler_speed_test.dir/reassembler_speed_test.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/net_interface.dir/net_interface.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/net_interface.dir/net_interface.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/net_interface_sanitized.dir/net_interface.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/net_interface_sanitized.dir/net_interface.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/recv_close.dir/recv_close.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/recv_close.dir/recv_close.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/recv_close_sanitized.dir/recv_close.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/recv_close_sanitized.dir/recv_close.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/recv_connect.dir/recv_connect.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/recv_connect.dir/recv_connect.cc.o" afterDir="false" />
@@ -303,23 +307,23 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/recv_window_sanitized.dir/recv_window.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/recv_window_sanitized.dir/recv_window.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_ack.dir/send_ack.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_ack.dir/send_ack.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_ack_sanitized.dir/send_ack.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_ack_sanitized.dir/send_ack.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_close.dir/send_close.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_close.dir/send_close.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_close_sanitized.dir/send_close.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_close_sanitized.dir/send_close.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_connect.dir/send_connect.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_connect.dir/send_connect.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_connect_sanitized.dir/send_connect.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_connect_sanitized.dir/send_connect.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_extra.dir/send_extra.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_extra.dir/send_extra.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_extra_sanitized.dir/send_extra.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_extra_sanitized.dir/send_extra.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_retx.dir/send_retx.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_retx.dir/send_retx.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_retx_sanitized.dir/send_retx.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_retx_sanitized.dir/send_retx.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_transmit.dir/send_transmit.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_transmit.dir/send_transmit.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_transmit_sanitized.dir/send_transmit.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_transmit_sanitized.dir/send_transmit.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_window.dir/send_window.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_window.dir/send_window.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_window_sanitized.dir/send_window.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/send_window_sanitized.dir/send_window.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/net_interface" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/net_interface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/net_interface_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/net_interface_sanitized" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_cap" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_cap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_cap_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_cap_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_dup" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_dup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_dup_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_dup_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_holes" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_holes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_holes_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_holes_sanitized" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_overlapping" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_overlapping" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_overlapping_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_overlapping_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_seq" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_seq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_seq_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_seq_sanitized" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_single" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_single" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_single_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_single_sanitized" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_speed_test" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_speed_test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_win" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_win" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_win_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/reassembler_win_sanitized" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/recv_close" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/recv_close" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/recv_close_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/recv_close_sanitized" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/recv_connect" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/recv_connect" afterDir="false" />
@@ -348,20 +352,17 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/send_transmit_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/send_transmit_sanitized" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/send_window" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/send_window" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/send_window_sanitized" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/send_window_sanitized" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_debug.dir/file_descriptor.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_debug.dir/file_descriptor.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_debug.dir/ipv4_header.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_debug.dir/ipv4_header.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_debug.dir/tcp_segment.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_debug.dir/tcp_segment.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_sanitized.dir/file_descriptor.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_sanitized.dir/file_descriptor.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_sanitized.dir/ipv4_header.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_sanitized.dir/ipv4_header.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_sanitized.dir/tcp_segment.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/CMakeFiles/util_sanitized.dir/tcp_segment.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/libutil_debug.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/libutil_debug.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/libutil_optimized.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/libutil_optimized.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/util/libutil_sanitized.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/util/libutil_sanitized.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/network_interface.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/network_interface.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/network_interface.hh" beforeDir="false" afterPath="$PROJECT_DIR$/src/network_interface.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reassembler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/reassembler.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.hh" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.hh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tcp_receiver.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_receiver.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tcp_receiver.hh" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_receiver.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tcp_sender.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_sender.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tcp_sender.hh" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_sender.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/tcp_minnow_socket.hh" beforeDir="false" afterPath="$PROJECT_DIR$/util/tcp_minnow_socket.hh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -407,8 +408,11 @@
     "CMake Application.check2.executor": "Run",
     "CMake Application.check3.executor": "Run",
     "CMake Application.check4.executor": "Run",
+    "CMake Application.check5.executor": "Run",
+    "CMake Application.check6.executor": "Run",
     "CMake Application.check_webget.executor": "Run",
     "CMake Application.minnow_optimized.executor": "Run",
+    "CMake Application.net_interface.executor": "Run",
     "CMake Application.reassembler_cap.executor": "Run",
     "CMake Application.reassembler_dup.executor": "Run",
     "CMake Application.reassembler_overlapping.executor": "Run",
@@ -418,10 +422,11 @@
     "CMake Application.recv_special.executor": "Debug",
     "CMake Application.recv_transmit.executor": "Run",
     "CMake Application.recv_window.executor": "Debug",
+    "CMake Application.router.executor": "Run",
     "CMake Application.send_close.executor": "Debug",
     "CMake Application.send_connect.executor": "Debug",
     "CMake Application.send_connect_sanitized.executor": "Run",
-    "CMake Application.send_extra.executor": "Debug",
+    "CMake Application.send_extra.executor": "Run",
     "CMake Application.send_extra_sanitized.executor": "Run",
     "CMake Application.send_retx.executor": "Run",
     "CMake Application.send_transmit.executor": "Run",
@@ -454,10 +459,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="CMake Application.check2">
+  <component name="RunManager" selected="CMake Application.check6">
     <configuration name="minnow" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
     </configuration>
@@ -597,11 +603,6 @@
       </method>
     </configuration>
     <configuration name="NightlyUpdate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="NightlyUpdate" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -896,6 +897,16 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="router" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="router" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="router">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="router_sanitized" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="router_sanitized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="router_sanitized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="send_ack" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="send_ack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minnow" RUN_TARGET_NAME="send_ack">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -1057,6 +1068,16 @@
       </method>
     </configuration>
     <configuration name="tidy_src__reassembler.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__reassembler.hh" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_src__router.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__router.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_src__router.hh" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_src__router.hh" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -1242,6 +1263,11 @@
       </method>
     </configuration>
     <configuration name="tidy_tests__recv_window.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__recv_window.cc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tidy_tests__router.cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minnow" TARGET_NAME="tidy_tests__router.cc" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -1602,6 +1628,8 @@
       <item itemvalue="CMake Application.tidy_src__network_interface.hh" />
       <item itemvalue="CMake Application.tidy_src__reassembler.cc" />
       <item itemvalue="CMake Application.tidy_src__reassembler.hh" />
+      <item itemvalue="CMake Application.tidy_src__router.cc" />
+      <item itemvalue="CMake Application.tidy_src__router.hh" />
       <item itemvalue="CMake Application.tidy_src__tcp_minnow_socket.cc" />
       <item itemvalue="CMake Application.tidy_src__tcp_receiver.cc" />
       <item itemvalue="CMake Application.tidy_src__tcp_receiver.hh" />
@@ -1639,6 +1667,7 @@
       <item itemvalue="CMake Application.tidy_tests__recv_special.cc" />
       <item itemvalue="CMake Application.tidy_tests__recv_transmit.cc" />
       <item itemvalue="CMake Application.tidy_tests__recv_window.cc" />
+      <item itemvalue="CMake Application.tidy_tests__router.cc" />
       <item itemvalue="CMake Application.tidy_tests__send_ack.cc" />
       <item itemvalue="CMake Application.tidy_tests__send_close.cc" />
       <item itemvalue="CMake Application.tidy_tests__send_connect.cc" />
@@ -1777,6 +1806,8 @@
       <item itemvalue="CMake Application.recv_transmit_sanitized" />
       <item itemvalue="CMake Application.recv_window" />
       <item itemvalue="CMake Application.recv_window_sanitized" />
+      <item itemvalue="CMake Application.router" />
+      <item itemvalue="CMake Application.router_sanitized" />
       <item itemvalue="CMake Application.send_ack" />
       <item itemvalue="CMake Application.send_ack_sanitized" />
       <item itemvalue="CMake Application.send_close" />
@@ -1823,7 +1854,9 @@
       <option name="presentableId" value="Default" />
       <updated>1732792233254</updated>
       <workItem from="1732792234328" duration="61224000" />
-      <workItem from="1732963991206" duration="42076000" />
+      <workItem from="1732963991206" duration="78800000" />
+      <workItem from="1733206623400" duration="4443000" />
+      <workItem from="1733213537968" duration="6867000" />
     </task>
     <servers />
   </component>
@@ -1887,11 +1920,6 @@
           <option name="timeStamp" value="143" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/send_connect.cc</url>
-          <line>69</line>
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/tests/send_transmit.cc</url>
           <line>162</line>
           <option name="timeStamp" value="154" />
@@ -1905,6 +1933,31 @@
           <url>file://$PROJECT_DIR$/tests/send_window.cc</url>
           <line>96</line>
           <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/net_interface.cc</url>
+          <line>245</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/router.cc</url>
+          <line>322</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/network_interface.cc</url>
+          <line>28</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/send_retx.cc</url>
+          <line>106</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/tcp_sender.cc</url>
+          <line>16</line>
+          <option name="timeStamp" value="327" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

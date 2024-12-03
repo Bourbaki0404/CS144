@@ -20,11 +20,40 @@ void Router::add_route( const uint32_t route_prefix,
        << static_cast<int>( prefix_length ) << " => " << ( next_hop.has_value() ? next_hop->ip() : "(direct)" )
        << " on interface " << interface_num << "\n";
 
-  // Your code here.
+  std::shared_ptr<TrieNode> ptr = root;
+  for(int i = 0; i < prefix_length; ++i){
+      bool bit = (route_prefix & (1 << (31 - i))) != 0;
+      if(!ptr->children[bit]){
+          ptr->children[bit] = make_shared<TrieNode>();
+      }
+      ptr = ptr->children[bit];
+  }
+  ptr->REntry = RTE{};
+  ptr->REntry->interface_num = interface_num;
+  if(next_hop.has_value())
+    ptr->REntry->next_hop = next_hop.value();
 }
 
 // Go through all the interfaces, and route every incoming datagram to its proper outgoing interface.
 void Router::route()
 {
-  // Your code here.
+    for(auto& interface : _interfaces){
+        auto& SendQueue = interface->datagrams_received();
+        while(!SendQueue.empty()){
+            auto& dgram = SendQueue.front();
+            if(dgram.header.ttl > 1){
+                dgram.header.ttl--;
+                dgram.header.compute_checksum();
+                std::optional<RTE> RTEntry = bestMatch(dgram.header.dst);
+                if(RTEntry.has_value()){
+                    if(RTEntry->next_hop.has_value()){
+                        Router::interface(RTEntry->interface_num)->send_datagram(dgram, RTEntry->next_hop.value());
+                    }else{
+                        Router::interface(RTEntry->interface_num)->send_datagram(dgram,Address::from_ipv4_numeric(dgram.header.dst));
+                    }
+                }
+            }
+            SendQueue.pop();
+        }
+    }
 }

@@ -241,6 +241,12 @@
 },
 {
   "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -o src/CMakeFiles/minnow_debug.dir/router.cc.o -c /home/bourbaki0404/CS_Learning/minnow/src/router.cc",
+  "file": "/home/bourbaki0404/CS_Learning/minnow/src/router.cc",
+  "output": "src/CMakeFiles/minnow_debug.dir/router.cc.o"
+},
+{
+  "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",
   "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -o src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o -c /home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc",
   "file": "/home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc",
   "output": "src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o"
@@ -289,6 +295,12 @@
 },
 {
   "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address -o src/CMakeFiles/minnow_sanitized.dir/router.cc.o -c /home/bourbaki0404/CS_Learning/minnow/src/router.cc",
+  "file": "/home/bourbaki0404/CS_Learning/minnow/src/router.cc",
+  "output": "src/CMakeFiles/minnow_sanitized.dir/router.cc.o"
+},
+{
+  "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",
   "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address -o src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o -c /home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc",
   "file": "/home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc",
   "output": "src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o"
@@ -334,6 +346,12 @@
   "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -O2 -o src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o -c /home/bourbaki0404/CS_Learning/minnow/src/reassembler.cc",
   "file": "/home/bourbaki0404/CS_Learning/minnow/src/reassembler.cc",
   "output": "src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o"
+},
+{
+  "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -O2 -o src/CMakeFiles/minnow_optimized.dir/router.cc.o -c /home/bourbaki0404/CS_Learning/minnow/src/router.cc",
+  "file": "/home/bourbaki0404/CS_Learning/minnow/src/router.cc",
+  "output": "src/CMakeFiles/minnow_optimized.dir/router.cc.o"
 },
 {
   "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",
@@ -766,6 +784,18 @@
   "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -o tests/CMakeFiles/net_interface.dir/net_interface.cc.o -c /home/bourbaki0404/CS_Learning/minnow/tests/net_interface.cc",
   "file": "/home/bourbaki0404/CS_Learning/minnow/tests/net_interface.cc",
   "output": "tests/CMakeFiles/net_interface.dir/net_interface.cc.o"
+},
+{
+  "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address -o tests/CMakeFiles/router_sanitized.dir/router.cc.o -c /home/bourbaki0404/CS_Learning/minnow/tests/router.cc",
+  "file": "/home/bourbaki0404/CS_Learning/minnow/tests/router.cc",
+  "output": "tests/CMakeFiles/router_sanitized.dir/router.cc.o"
+},
+{
+  "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -o tests/CMakeFiles/router.dir/router.cc.o -c /home/bourbaki0404/CS_Learning/minnow/tests/router.cc",
+  "file": "/home/bourbaki0404/CS_Learning/minnow/tests/router.cc",
+  "output": "tests/CMakeFiles/router.dir/router.cc.o"
 },
 {
   "directory": "/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug",

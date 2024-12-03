@@ -34,12 +34,8 @@ void Reassembler::insert( uint64_t first_index, string data, bool is_last_substr
     if(it != intervals.end()){
         auto it2 = it;
         uint64_t maxidx = last_index;
-
-
         uint64_t leftmostIntFirst = std::min(it->first, first_index);
         std::string rightmostIntDat;
-
-
         int64_t offset = first_index - it->first;
         std::string leftmostIntData = it->second.substr(0, std::max(offset, (int64_t)0));
         while(it2->first <= last_index && it2 != intervals.end()){

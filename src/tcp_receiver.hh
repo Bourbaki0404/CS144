@@ -28,8 +28,6 @@ public:
 private:
   Reassembler reassembler_;
   Wrap32 SenderISN{0};
-  uint64_t SenderSN{0};
-  uint64_t unassembledIdx{0};
-  enum State{CLOSED, SYN_RECEIVED, ESTABLISHED, WAIT_CLOSE, LISTEN};
-  State state{LISTEN};
+  bool sync_{false};
+  uint64_t AckNo{0};
 };

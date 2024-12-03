@@ -6,6 +6,7 @@
 #include "ethernet_frame.hh"
 #include "ipv4_datagram.hh"
 #include <map>
+#include <vector>
 
 // A "network interface" that connects IP (the internet layer, or network layer)
 // with Ethernet (the network access layer, or link layer).
@@ -115,13 +116,8 @@ private:
   // Human-readable name of the interface
   std::string name_;
 
-    struct ARPPacket {
-        uint16_t opcode;              // Operation code (1 = request, 2 = reply)
-        EthernetAddress sender_mac;   // Sender MAC address
-        uint32_t sender_ip;           // Sender IP address
-        EthernetAddress target_mac;    // Target MAC address (0s in request)
-        uint32_t target_ip;           // Target IP address
-    };
+    const uint64_t resend_interval = 5 * 1000; // 5 seconds
+    const std::array<uint8_t, 6> ETHERNET_BROADCAST = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 
   // The physical output port (+ a helper function `transmit` that uses it to send an Ethernet frame)
   std::shared_ptr<OutputPort> port_;
@@ -138,5 +134,6 @@ private:
 
   ARPCache ARP_cache {};
   uint64_t currentTimeStamp {};
-  std::map<uint32_t, InternetDatagram> sendQueue {};
+  std::map<uint32_t, std::vector<InternetDatagram>> sendQueue {};
+  std::map<uint32_t, uint64_t> ARPResendQueue {};
 };

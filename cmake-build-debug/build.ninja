@@ -120,6 +120,18 @@ build tidy_src__reassembler.hh: phony CMakeFiles/tidy_src__reassembler.hh
 
 
 #############################################
+# Utility command for tidy_src__router.cc
+
+build tidy_src__router.cc: phony CMakeFiles/tidy_src__router.cc
+
+
+#############################################
+# Utility command for tidy_src__router.hh
+
+build tidy_src__router.hh: phony CMakeFiles/tidy_src__router.hh
+
+
+#############################################
 # Utility command for tidy_src__tcp_minnow_socket.cc
 
 build tidy_src__tcp_minnow_socket.cc: phony CMakeFiles/tidy_src__tcp_minnow_socket.cc
@@ -339,6 +351,12 @@ build tidy_tests__recv_transmit.cc: phony CMakeFiles/tidy_tests__recv_transmit.c
 # Utility command for tidy_tests__recv_window.cc
 
 build tidy_tests__recv_window.cc: phony CMakeFiles/tidy_tests__recv_window.cc
+
+
+#############################################
+# Utility command for tidy_tests__router.cc
+
+build tidy_tests__router.cc: phony CMakeFiles/tidy_tests__router.cc
 
 
 #############################################
@@ -656,13 +674,13 @@ build tidy_util__udinfo.hh: phony CMakeFiles/tidy_util__udinfo.hh
 #############################################
 # Utility command for tidy
 
-build tidy: phony CMakeFiles/tidy tidy_src__byte_stream.cc tidy_src__byte_stream_helpers.cc tidy_src__network_interface.cc tidy_src__reassembler.cc tidy_src__tcp_minnow_socket.cc tidy_src__tcp_receiver.cc tidy_src__tcp_sender.cc tidy_src__wrapping_integers.cc
+build tidy: phony CMakeFiles/tidy tidy_src__byte_stream.cc tidy_src__byte_stream_helpers.cc tidy_src__network_interface.cc tidy_src__reassembler.cc tidy_src__router.cc tidy_src__tcp_minnow_socket.cc tidy_src__tcp_receiver.cc tidy_src__tcp_sender.cc tidy_src__wrapping_integers.cc
 
 
 #############################################
 # Utility command for tidy-all
 
-build tidy-all: phony CMakeFiles/tidy-all tidy_apps__bidirectional_stream_copy.cc tidy_apps__bidirectional_stream_copy.hh tidy_apps__tcp_ipv4.cc tidy_apps__tcp_native.cc tidy_apps__webget.cc tidy_src__byte_stream.cc tidy_src__byte_stream.hh tidy_src__byte_stream_helpers.cc tidy_src__network_interface.cc tidy_src__network_interface.hh tidy_src__reassembler.cc tidy_src__reassembler.hh tidy_src__tcp_minnow_socket.cc tidy_src__tcp_receiver.cc tidy_src__tcp_receiver.hh tidy_src__tcp_sender.cc tidy_src__tcp_sender.hh tidy_src__wrapping_integers.cc tidy_src__wrapping_integers.hh tidy_tests__byte_stream_basics.cc tidy_tests__byte_stream_capacity.cc tidy_tests__byte_stream_many_writes.cc tidy_tests__byte_stream_one_write.cc tidy_tests__byte_stream_speed_test.cc tidy_tests__byte_stream_stress_test.cc tidy_tests__byte_stream_test_harness.hh tidy_tests__byte_stream_two_writes.cc tidy_tests__common.cc tidy_tests__common.hh tidy_tests__conversions.hh tidy_tests__net_interface.cc tidy_tests__network_interface_test_harness.hh tidy_tests__reassembler_cap.cc tidy_tests__reassembler_dup.cc tidy_tests__reassembler_holes.cc tidy_tests__reassembler_overlapping.cc tidy_tests__reassembler_seq.cc tidy_tests__reassembler_single.cc tidy_tests__reassembler_speed_test.cc tidy_tests__reassembler_test_harness.hh tidy_tests__reassembler_win.cc tidy_tests__receiver_test_harness.hh tidy_tests__recv_close.cc tidy_tests__recv_connect.cc tidy_tests__recv_reorder.cc tidy_tests__recv_reorder_more.cc tidy_tests__recv_special.cc tidy_tests__recv_transmit.cc tidy_tests__recv_window.cc tidy_tests__send_ack.cc tidy_tests__send_close.cc tidy_tests__send_connect.cc tidy_tests__send_extra.cc tidy_tests__send_retx.cc tidy_tests__send_transmit.cc tidy_tests__send_window.cc tidy_tests__sender_test_harness.hh tidy_tests__test_should_be.hh tidy_tests__wrapping_integers_cmp.cc tidy_tests__wrapping_integers_extra.cc tidy_tests__wrapping_integers_roundtrip.cc tidy_tests__wrapping_integers_unwrap.cc tidy_tests__wrapping_integers_wrap.cc tidy_util__address.cc tidy_util__address.hh tidy_util__arp_message.cc tidy_util__arp_message.hh tidy_util__checksum.hh tidy_util__ethernet_frame.hh tidy_util__ethernet_header.cc tidy_util__ethernet_header.hh tidy_util__eventloop.cc tidy_util__eventloop.hh tidy_util__exception.hh tidy_util__fd_adapter.hh tidy_util__file_descriptor.cc tidy_util__file_descriptor.hh tidy_util__ipv4_datagram.hh tidy_util__ipv4_header.cc tidy_util__ipv4_header.hh tidy_util__lossy_fd_adapter.hh tidy_util__parser.hh tidy_util__random.cc tidy_util__random.hh tidy_util__socket.cc tidy_util__socket.hh tidy_util__tcp_config.hh tidy_util__tcp_minnow_socket.hh tidy_util__tcp_minnow_socket_impl.hh tidy_util__tcp_over_ip.cc tidy_util__tcp_over_ip.hh tidy_util__tcp_peer.hh tidy_util__tcp_receiver_message.hh tidy_util__tcp_segment.cc tidy_util__tcp_segment.hh tidy_util__tcp_sender_message.hh tidy_util__tun.cc tidy_util__tun.hh tidy_util__tuntap_adapter.cc tidy_util__tuntap_adapter.hh tidy_util__udinfo.hh
+build tidy-all: phony CMakeFiles/tidy-all tidy_apps__bidirectional_stream_copy.cc tidy_apps__bidirectional_stream_copy.hh tidy_apps__tcp_ipv4.cc tidy_apps__tcp_native.cc tidy_apps__webget.cc tidy_src__byte_stream.cc tidy_src__byte_stream.hh tidy_src__byte_stream_helpers.cc tidy_src__network_interface.cc tidy_src__network_interface.hh tidy_src__reassembler.cc tidy_src__reassembler.hh tidy_src__router.cc tidy_src__router.hh tidy_src__tcp_minnow_socket.cc tidy_src__tcp_receiver.cc tidy_src__tcp_receiver.hh tidy_src__tcp_sender.cc tidy_src__tcp_sender.hh tidy_src__wrapping_integers.cc tidy_src__wrapping_integers.hh tidy_tests__byte_stream_basics.cc tidy_tests__byte_stream_capacity.cc tidy_tests__byte_stream_many_writes.cc tidy_tests__byte_stream_one_write.cc tidy_tests__byte_stream_speed_test.cc tidy_tests__byte_stream_stress_test.cc tidy_tests__byte_stream_test_harness.hh tidy_tests__byte_stream_two_writes.cc tidy_tests__common.cc tidy_tests__common.hh tidy_tests__conversions.hh tidy_tests__net_interface.cc tidy_tests__network_interface_test_harness.hh tidy_tests__reassembler_cap.cc tidy_tests__reassembler_dup.cc tidy_tests__reassembler_holes.cc tidy_tests__reassembler_overlapping.cc tidy_tests__reassembler_seq.cc tidy_tests__reassembler_single.cc tidy_tests__reassembler_speed_test.cc tidy_tests__reassembler_test_harness.hh tidy_tests__reassembler_win.cc tidy_tests__receiver_test_harness.hh tidy_tests__recv_close.cc tidy_tests__recv_connect.cc tidy_tests__recv_reorder.cc tidy_tests__recv_reorder_more.cc tidy_tests__recv_special.cc tidy_tests__recv_transmit.cc tidy_tests__recv_window.cc tidy_tests__router.cc tidy_tests__send_ack.cc tidy_tests__send_close.cc tidy_tests__send_connect.cc tidy_tests__send_extra.cc tidy_tests__send_retx.cc tidy_tests__send_transmit.cc tidy_tests__send_window.cc tidy_tests__sender_test_harness.hh tidy_tests__test_should_be.hh tidy_tests__wrapping_integers_cmp.cc tidy_tests__wrapping_integers_extra.cc tidy_tests__wrapping_integers_roundtrip.cc tidy_tests__wrapping_integers_unwrap.cc tidy_tests__wrapping_integers_wrap.cc tidy_util__address.cc tidy_util__address.hh tidy_util__arp_message.cc tidy_util__arp_message.hh tidy_util__checksum.hh tidy_util__ethernet_frame.hh tidy_util__ethernet_header.cc tidy_util__ethernet_header.hh tidy_util__eventloop.cc tidy_util__eventloop.hh tidy_util__exception.hh tidy_util__fd_adapter.hh tidy_util__file_descriptor.cc tidy_util__file_descriptor.hh tidy_util__ipv4_datagram.hh tidy_util__ipv4_header.cc tidy_util__ipv4_header.hh tidy_util__lossy_fd_adapter.hh tidy_util__parser.hh tidy_util__random.cc tidy_util__random.hh tidy_util__socket.cc tidy_util__socket.hh tidy_util__tcp_config.hh tidy_util__tcp_minnow_socket.hh tidy_util__tcp_minnow_socket_impl.hh tidy_util__tcp_over_ip.cc tidy_util__tcp_over_ip.hh tidy_util__tcp_peer.hh tidy_util__tcp_receiver_message.hh tidy_util__tcp_segment.cc tidy_util__tcp_segment.hh tidy_util__tcp_sender_message.hh tidy_util__tun.cc tidy_util__tun.hh tidy_util__tuntap_adapter.cc tidy_util__tuntap_adapter.hh tidy_util__udinfo.hh
 
 
 #############################################
@@ -920,7 +938,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Custom command for CMakeFiles/format
 
 build CMakeFiles/format | ${cmake_ninja_workdir}CMakeFiles/format: CUSTOM_COMMAND
-  COMMAND = cd /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug && clang-format -i /home/bourbaki0404/CS_Learning/minnow/apps/bidirectional_stream_copy.cc /home/bourbaki0404/CS_Learning/minnow/apps/bidirectional_stream_copy.hh /home/bourbaki0404/CS_Learning/minnow/apps/tcp_ipv4.cc /home/bourbaki0404/CS_Learning/minnow/apps/tcp_native.cc /home/bourbaki0404/CS_Learning/minnow/apps/webget.cc /home/bourbaki0404/CS_Learning/minnow/src/byte_stream.cc /home/bourbaki0404/CS_Learning/minnow/src/byte_stream.hh /home/bourbaki0404/CS_Learning/minnow/src/byte_stream_helpers.cc /home/bourbaki0404/CS_Learning/minnow/src/network_interface.cc /home/bourbaki0404/CS_Learning/minnow/src/network_interface.hh /home/bourbaki0404/CS_Learning/minnow/src/reassembler.cc /home/bourbaki0404/CS_Learning/minnow/src/reassembler.hh /home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc /home/bourbaki0404/CS_Learning/minnow/src/tcp_receiver.cc /home/bourbaki0404/CS_Learning/minnow/src/tcp_receiver.hh /home/bourbaki0404/CS_Learning/minnow/src/tcp_sender.cc /home/bourbaki0404/CS_Learning/minnow/src/tcp_sender.hh /home/bourbaki0404/CS_Learning/minnow/src/wrapping_integers.cc /home/bourbaki0404/CS_Learning/minnow/src/wrapping_integers.hh /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_basics.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_capacity.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_many_writes.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_one_write.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_speed_test.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_stress_test.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_two_writes.cc /home/bourbaki0404/CS_Learning/minnow/tests/common.cc /home/bourbaki0404/CS_Learning/minnow/tests/common.hh /home/bourbaki0404/CS_Learning/minnow/tests/conversions.hh /home/bourbaki0404/CS_Learning/minnow/tests/net_interface.cc /home/bourbaki0404/CS_Learning/minnow/tests/network_interface_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_cap.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_dup.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_holes.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_overlapping.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_seq.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_single.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_speed_test.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_win.cc /home/bourbaki0404/CS_Learning/minnow/tests/receiver_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/recv_close.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_connect.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_reorder.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_reorder_more.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_special.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_transmit.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_window.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_ack.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_close.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_connect.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_extra.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_retx.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_transmit.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_window.cc /home/bourbaki0404/CS_Learning/minnow/tests/sender_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/test_should_be.hh /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_cmp.cc /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_extra.cc /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_roundtrip.cc /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_unwrap.cc /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_wrap.cc /home/bourbaki0404/CS_Learning/minnow/util/address.cc /home/bourbaki0404/CS_Learning/minnow/util/address.hh /home/bourbaki0404/CS_Learning/minnow/util/arp_message.cc /home/bourbaki0404/CS_Learning/minnow/util/arp_message.hh /home/bourbaki0404/CS_Learning/minnow/util/checksum.hh /home/bourbaki0404/CS_Learning/minnow/util/ethernet_frame.hh /home/bourbaki0404/CS_Learning/minnow/util/ethernet_header.cc /home/bourbaki0404/CS_Learning/minnow/util/ethernet_header.hh /home/bourbaki0404/CS_Learning/minnow/util/eventloop.cc /home/bourbaki0404/CS_Learning/minnow/util/eventloop.hh /home/bourbaki0404/CS_Learning/minnow/util/exception.hh /home/bourbaki0404/CS_Learning/minnow/util/fd_adapter.hh /home/bourbaki0404/CS_Learning/minnow/util/file_descriptor.cc /home/bourbaki0404/CS_Learning/minnow/util/file_descriptor.hh /home/bourbaki0404/CS_Learning/minnow/util/ipv4_datagram.hh /home/bourbaki0404/CS_Learning/minnow/util/ipv4_header.cc /home/bourbaki0404/CS_Learning/minnow/util/ipv4_header.hh /home/bourbaki0404/CS_Learning/minnow/util/lossy_fd_adapter.hh /home/bourbaki0404/CS_Learning/minnow/util/parser.hh /home/bourbaki0404/CS_Learning/minnow/util/random.cc /home/bourbaki0404/CS_Learning/minnow/util/random.hh /home/bourbaki0404/CS_Learning/minnow/util/socket.cc /home/bourbaki0404/CS_Learning/minnow/util/socket.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_config.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_minnow_socket.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_minnow_socket_impl.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_over_ip.cc /home/bourbaki0404/CS_Learning/minnow/util/tcp_over_ip.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_peer.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_receiver_message.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_segment.cc /home/bourbaki0404/CS_Learning/minnow/util/tcp_segment.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_sender_message.hh /home/bourbaki0404/CS_Learning/minnow/util/tun.cc /home/bourbaki0404/CS_Learning/minnow/util/tun.hh /home/bourbaki0404/CS_Learning/minnow/util/tuntap_adapter.cc /home/bourbaki0404/CS_Learning/minnow/util/tuntap_adapter.hh /home/bourbaki0404/CS_Learning/minnow/util/udinfo.hh
+  COMMAND = cd /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug && clang-format -i /home/bourbaki0404/CS_Learning/minnow/apps/bidirectional_stream_copy.cc /home/bourbaki0404/CS_Learning/minnow/apps/bidirectional_stream_copy.hh /home/bourbaki0404/CS_Learning/minnow/apps/tcp_ipv4.cc /home/bourbaki0404/CS_Learning/minnow/apps/tcp_native.cc /home/bourbaki0404/CS_Learning/minnow/apps/webget.cc /home/bourbaki0404/CS_Learning/minnow/src/byte_stream.cc /home/bourbaki0404/CS_Learning/minnow/src/byte_stream.hh /home/bourbaki0404/CS_Learning/minnow/src/byte_stream_helpers.cc /home/bourbaki0404/CS_Learning/minnow/src/network_interface.cc /home/bourbaki0404/CS_Learning/minnow/src/network_interface.hh /home/bourbaki0404/CS_Learning/minnow/src/reassembler.cc /home/bourbaki0404/CS_Learning/minnow/src/reassembler.hh /home/bourbaki0404/CS_Learning/minnow/src/router.cc /home/bourbaki0404/CS_Learning/minnow/src/router.hh /home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc /home/bourbaki0404/CS_Learning/minnow/src/tcp_receiver.cc /home/bourbaki0404/CS_Learning/minnow/src/tcp_receiver.hh /home/bourbaki0404/CS_Learning/minnow/src/tcp_sender.cc /home/bourbaki0404/CS_Learning/minnow/src/tcp_sender.hh /home/bourbaki0404/CS_Learning/minnow/src/wrapping_integers.cc /home/bourbaki0404/CS_Learning/minnow/src/wrapping_integers.hh /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_basics.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_capacity.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_many_writes.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_one_write.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_speed_test.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_stress_test.cc /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/byte_stream_two_writes.cc /home/bourbaki0404/CS_Learning/minnow/tests/common.cc /home/bourbaki0404/CS_Learning/minnow/tests/common.hh /home/bourbaki0404/CS_Learning/minnow/tests/conversions.hh /home/bourbaki0404/CS_Learning/minnow/tests/net_interface.cc /home/bourbaki0404/CS_Learning/minnow/tests/network_interface_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_cap.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_dup.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_holes.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_overlapping.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_seq.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_single.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_speed_test.cc /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/reassembler_win.cc /home/bourbaki0404/CS_Learning/minnow/tests/receiver_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/recv_close.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_connect.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_reorder.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_reorder_more.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_special.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_transmit.cc /home/bourbaki0404/CS_Learning/minnow/tests/recv_window.cc /home/bourbaki0404/CS_Learning/minnow/tests/router.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_ack.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_close.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_connect.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_extra.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_retx.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_transmit.cc /home/bourbaki0404/CS_Learning/minnow/tests/send_window.cc /home/bourbaki0404/CS_Learning/minnow/tests/sender_test_harness.hh /home/bourbaki0404/CS_Learning/minnow/tests/test_should_be.hh /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_cmp.cc /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_extra.cc /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_roundtrip.cc /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_unwrap.cc /home/bourbaki0404/CS_Learning/minnow/tests/wrapping_integers_wrap.cc /home/bourbaki0404/CS_Learning/minnow/util/address.cc /home/bourbaki0404/CS_Learning/minnow/util/address.hh /home/bourbaki0404/CS_Learning/minnow/util/arp_message.cc /home/bourbaki0404/CS_Learning/minnow/util/arp_message.hh /home/bourbaki0404/CS_Learning/minnow/util/checksum.hh /home/bourbaki0404/CS_Learning/minnow/util/ethernet_frame.hh /home/bourbaki0404/CS_Learning/minnow/util/ethernet_header.cc /home/bourbaki0404/CS_Learning/minnow/util/ethernet_header.hh /home/bourbaki0404/CS_Learning/minnow/util/eventloop.cc /home/bourbaki0404/CS_Learning/minnow/util/eventloop.hh /home/bourbaki0404/CS_Learning/minnow/util/exception.hh /home/bourbaki0404/CS_Learning/minnow/util/fd_adapter.hh /home/bourbaki0404/CS_Learning/minnow/util/file_descriptor.cc /home/bourbaki0404/CS_Learning/minnow/util/file_descriptor.hh /home/bourbaki0404/CS_Learning/minnow/util/ipv4_datagram.hh /home/bourbaki0404/CS_Learning/minnow/util/ipv4_header.cc /home/bourbaki0404/CS_Learning/minnow/util/ipv4_header.hh /home/bourbaki0404/CS_Learning/minnow/util/lossy_fd_adapter.hh /home/bourbaki0404/CS_Learning/minnow/util/parser.hh /home/bourbaki0404/CS_Learning/minnow/util/random.cc /home/bourbaki0404/CS_Learning/minnow/util/random.hh /home/bourbaki0404/CS_Learning/minnow/util/socket.cc /home/bourbaki0404/CS_Learning/minnow/util/socket.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_config.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_minnow_socket.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_minnow_socket_impl.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_over_ip.cc /home/bourbaki0404/CS_Learning/minnow/util/tcp_over_ip.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_peer.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_receiver_message.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_segment.cc /home/bourbaki0404/CS_Learning/minnow/util/tcp_segment.hh /home/bourbaki0404/CS_Learning/minnow/util/tcp_sender_message.hh /home/bourbaki0404/CS_Learning/minnow/util/tun.cc /home/bourbaki0404/CS_Learning/minnow/util/tun.hh /home/bourbaki0404/CS_Learning/minnow/util/tuntap_adapter.cc /home/bourbaki0404/CS_Learning/minnow/util/tuntap_adapter.hh /home/bourbaki0404/CS_Learning/minnow/util/udinfo.hh
   DESC = Formatting source code...
 
 
@@ -1006,6 +1024,20 @@ build CMakeFiles/tidy_src__reassembler.cc | ${cmake_ninja_workdir}CMakeFiles/tid
 
 build CMakeFiles/tidy_src__reassembler.hh | ${cmake_ninja_workdir}CMakeFiles/tidy_src__reassembler.hh: CUSTOM_COMMAND
   COMMAND = cd /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug && clang-tidy --quiet -header-filter=.* -p=/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug /home/bourbaki0404/CS_Learning/minnow/src/reassembler.hh
+
+
+#############################################
+# Custom command for CMakeFiles/tidy_src__router.cc
+
+build CMakeFiles/tidy_src__router.cc | ${cmake_ninja_workdir}CMakeFiles/tidy_src__router.cc: CUSTOM_COMMAND
+  COMMAND = cd /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug && clang-tidy --quiet -header-filter=.* -p=/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug /home/bourbaki0404/CS_Learning/minnow/src/router.cc
+
+
+#############################################
+# Custom command for CMakeFiles/tidy_src__router.hh
+
+build CMakeFiles/tidy_src__router.hh | ${cmake_ninja_workdir}CMakeFiles/tidy_src__router.hh: CUSTOM_COMMAND
+  COMMAND = cd /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug && clang-tidy --quiet -header-filter=.* -p=/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug /home/bourbaki0404/CS_Learning/minnow/src/router.hh
 
 
 #############################################
@@ -1265,6 +1297,13 @@ build CMakeFiles/tidy_tests__recv_transmit.cc | ${cmake_ninja_workdir}CMakeFiles
 
 build CMakeFiles/tidy_tests__recv_window.cc | ${cmake_ninja_workdir}CMakeFiles/tidy_tests__recv_window.cc: CUSTOM_COMMAND
   COMMAND = cd /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug && clang-tidy --quiet -header-filter=.* -p=/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug /home/bourbaki0404/CS_Learning/minnow/tests/recv_window.cc
+
+
+#############################################
+# Custom command for CMakeFiles/tidy_tests__router.cc
+
+build CMakeFiles/tidy_tests__router.cc | ${cmake_ninja_workdir}CMakeFiles/tidy_tests__router.cc: CUSTOM_COMMAND
+  COMMAND = cd /home/bourbaki0404/CS_Learning/minnow/cmake-build-debug && clang-tidy --quiet -header-filter=.* -p=/home/bourbaki0404/CS_Learning/minnow/cmake-build-debug /home/bourbaki0404/CS_Learning/minnow/tests/router.cc
 
 
 #############################################
@@ -1634,13 +1673,13 @@ build CMakeFiles/tidy_util__udinfo.hh | ${cmake_ninja_workdir}CMakeFiles/tidy_ut
 #############################################
 # Phony custom command for CMakeFiles/tidy
 
-build CMakeFiles/tidy | ${cmake_ninja_workdir}CMakeFiles/tidy: phony || tidy_src__byte_stream.cc tidy_src__byte_stream_helpers.cc tidy_src__network_interface.cc tidy_src__reassembler.cc tidy_src__tcp_minnow_socket.cc tidy_src__tcp_receiver.cc tidy_src__tcp_sender.cc tidy_src__wrapping_integers.cc
+build CMakeFiles/tidy | ${cmake_ninja_workdir}CMakeFiles/tidy: phony || tidy_src__byte_stream.cc tidy_src__byte_stream_helpers.cc tidy_src__network_interface.cc tidy_src__reassembler.cc tidy_src__router.cc tidy_src__tcp_minnow_socket.cc tidy_src__tcp_receiver.cc tidy_src__tcp_sender.cc tidy_src__wrapping_integers.cc
 
 
 #############################################
 # Phony custom command for CMakeFiles/tidy-all
 
-build CMakeFiles/tidy-all | ${cmake_ninja_workdir}CMakeFiles/tidy-all: phony || tidy_apps__bidirectional_stream_copy.cc tidy_apps__bidirectional_stream_copy.hh tidy_apps__tcp_ipv4.cc tidy_apps__tcp_native.cc tidy_apps__webget.cc tidy_src__byte_stream.cc tidy_src__byte_stream.hh tidy_src__byte_stream_helpers.cc tidy_src__network_interface.cc tidy_src__network_interface.hh tidy_src__reassembler.cc tidy_src__reassembler.hh tidy_src__tcp_minnow_socket.cc tidy_src__tcp_receiver.cc tidy_src__tcp_receiver.hh tidy_src__tcp_sender.cc tidy_src__tcp_sender.hh tidy_src__wrapping_integers.cc tidy_src__wrapping_integers.hh tidy_tests__byte_stream_basics.cc tidy_tests__byte_stream_capacity.cc tidy_tests__byte_stream_many_writes.cc tidy_tests__byte_stream_one_write.cc tidy_tests__byte_stream_speed_test.cc tidy_tests__byte_stream_stress_test.cc tidy_tests__byte_stream_test_harness.hh tidy_tests__byte_stream_two_writes.cc tidy_tests__common.cc tidy_tests__common.hh tidy_tests__conversions.hh tidy_tests__net_interface.cc tidy_tests__network_interface_test_harness.hh tidy_tests__reassembler_cap.cc tidy_tests__reassembler_dup.cc tidy_tests__reassembler_holes.cc tidy_tests__reassembler_overlapping.cc tidy_tests__reassembler_seq.cc tidy_tests__reassembler_single.cc tidy_tests__reassembler_speed_test.cc tidy_tests__reassembler_test_harness.hh tidy_tests__reassembler_win.cc tidy_tests__receiver_test_harness.hh tidy_tests__recv_close.cc tidy_tests__recv_connect.cc tidy_tests__recv_reorder.cc tidy_tests__recv_reorder_more.cc tidy_tests__recv_special.cc tidy_tests__recv_transmit.cc tidy_tests__recv_window.cc tidy_tests__send_ack.cc tidy_tests__send_close.cc tidy_tests__send_connect.cc tidy_tests__send_extra.cc tidy_tests__send_retx.cc tidy_tests__send_transmit.cc tidy_tests__send_window.cc tidy_tests__sender_test_harness.hh tidy_tests__test_should_be.hh tidy_tests__wrapping_integers_cmp.cc tidy_tests__wrapping_integers_extra.cc tidy_tests__wrapping_integers_roundtrip.cc tidy_tests__wrapping_integers_unwrap.cc tidy_tests__wrapping_integers_wrap.cc tidy_util__address.cc tidy_util__address.hh tidy_util__arp_message.cc tidy_util__arp_message.hh tidy_util__checksum.hh tidy_util__ethernet_frame.hh tidy_util__ethernet_header.cc tidy_util__ethernet_header.hh tidy_util__eventloop.cc tidy_util__eventloop.hh tidy_util__exception.hh tidy_util__fd_adapter.hh tidy_util__file_descriptor.cc tidy_util__file_descriptor.hh tidy_util__ipv4_datagram.hh tidy_util__ipv4_header.cc tidy_util__ipv4_header.hh tidy_util__lossy_fd_adapter.hh tidy_util__parser.hh tidy_util__random.cc tidy_util__random.hh tidy_util__socket.cc tidy_util__socket.hh tidy_util__tcp_config.hh tidy_util__tcp_minnow_socket.hh tidy_util__tcp_minnow_socket_impl.hh tidy_util__tcp_over_ip.cc tidy_util__tcp_over_ip.hh tidy_util__tcp_peer.hh tidy_util__tcp_receiver_message.hh tidy_util__tcp_segment.cc tidy_util__tcp_segment.hh tidy_util__tcp_sender_message.hh tidy_util__tun.cc tidy_util__tun.hh tidy_util__tuntap_adapter.cc tidy_util__tuntap_adapter.hh tidy_util__udinfo.hh
+build CMakeFiles/tidy-all | ${cmake_ninja_workdir}CMakeFiles/tidy-all: phony || tidy_apps__bidirectional_stream_copy.cc tidy_apps__bidirectional_stream_copy.hh tidy_apps__tcp_ipv4.cc tidy_apps__tcp_native.cc tidy_apps__webget.cc tidy_src__byte_stream.cc tidy_src__byte_stream.hh tidy_src__byte_stream_helpers.cc tidy_src__network_interface.cc tidy_src__network_interface.hh tidy_src__reassembler.cc tidy_src__reassembler.hh tidy_src__router.cc tidy_src__router.hh tidy_src__tcp_minnow_socket.cc tidy_src__tcp_receiver.cc tidy_src__tcp_receiver.hh tidy_src__tcp_sender.cc tidy_src__tcp_sender.hh tidy_src__wrapping_integers.cc tidy_src__wrapping_integers.hh tidy_tests__byte_stream_basics.cc tidy_tests__byte_stream_capacity.cc tidy_tests__byte_stream_many_writes.cc tidy_tests__byte_stream_one_write.cc tidy_tests__byte_stream_speed_test.cc tidy_tests__byte_stream_stress_test.cc tidy_tests__byte_stream_test_harness.hh tidy_tests__byte_stream_two_writes.cc tidy_tests__common.cc tidy_tests__common.hh tidy_tests__conversions.hh tidy_tests__net_interface.cc tidy_tests__network_interface_test_harness.hh tidy_tests__reassembler_cap.cc tidy_tests__reassembler_dup.cc tidy_tests__reassembler_holes.cc tidy_tests__reassembler_overlapping.cc tidy_tests__reassembler_seq.cc tidy_tests__reassembler_single.cc tidy_tests__reassembler_speed_test.cc tidy_tests__reassembler_test_harness.hh tidy_tests__reassembler_win.cc tidy_tests__receiver_test_harness.hh tidy_tests__recv_close.cc tidy_tests__recv_connect.cc tidy_tests__recv_reorder.cc tidy_tests__recv_reorder_more.cc tidy_tests__recv_special.cc tidy_tests__recv_transmit.cc tidy_tests__recv_window.cc tidy_tests__router.cc tidy_tests__send_ack.cc tidy_tests__send_close.cc tidy_tests__send_connect.cc tidy_tests__send_extra.cc tidy_tests__send_retx.cc tidy_tests__send_transmit.cc tidy_tests__send_window.cc tidy_tests__sender_test_harness.hh tidy_tests__test_should_be.hh tidy_tests__wrapping_integers_cmp.cc tidy_tests__wrapping_integers_extra.cc tidy_tests__wrapping_integers_roundtrip.cc tidy_tests__wrapping_integers_unwrap.cc tidy_tests__wrapping_integers_wrap.cc tidy_util__address.cc tidy_util__address.hh tidy_util__arp_message.cc tidy_util__arp_message.hh tidy_util__checksum.hh tidy_util__ethernet_frame.hh tidy_util__ethernet_header.cc tidy_util__ethernet_header.hh tidy_util__eventloop.cc tidy_util__eventloop.hh tidy_util__exception.hh tidy_util__fd_adapter.hh tidy_util__file_descriptor.cc tidy_util__file_descriptor.hh tidy_util__ipv4_datagram.hh tidy_util__ipv4_header.cc tidy_util__ipv4_header.hh tidy_util__lossy_fd_adapter.hh tidy_util__parser.hh tidy_util__random.cc tidy_util__random.hh tidy_util__socket.cc tidy_util__socket.hh tidy_util__tcp_config.hh tidy_util__tcp_minnow_socket.hh tidy_util__tcp_minnow_socket_impl.hh tidy_util__tcp_over_ip.cc tidy_util__tcp_over_ip.hh tidy_util__tcp_peer.hh tidy_util__tcp_receiver_message.hh tidy_util__tcp_segment.cc tidy_util__tcp_segment.hh tidy_util__tcp_sender_message.hh tidy_util__tun.cc tidy_util__tun.hh tidy_util__tuntap_adapter.cc tidy_util__tuntap_adapter.hh tidy_util__udinfo.hh
 
 
 #############################################
@@ -2331,6 +2370,13 @@ build src/CMakeFiles/minnow_debug.dir/reassembler.cc.o: CXX_COMPILER__minnow_deb
   OBJECT_DIR = src/CMakeFiles/minnow_debug.dir
   OBJECT_FILE_DIR = src/CMakeFiles/minnow_debug.dir
 
+build src/CMakeFiles/minnow_debug.dir/router.cc.o: CXX_COMPILER__minnow_debug_unscanned_Debug /home/bourbaki0404/CS_Learning/minnow/src/router.cc || cmake_object_order_depends_target_minnow_debug
+  DEP_FILE = src/CMakeFiles/minnow_debug.dir/router.cc.o.d
+  FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src
+  OBJECT_DIR = src/CMakeFiles/minnow_debug.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/minnow_debug.dir
+
 build src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o: CXX_COMPILER__minnow_debug_unscanned_Debug /home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc || cmake_object_order_depends_target_minnow_debug
   DEP_FILE = src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o.d
   FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always
@@ -2367,7 +2413,7 @@ build src/CMakeFiles/minnow_debug.dir/wrapping_integers.cc.o: CXX_COMPILER__minn
 #############################################
 # Link the static library src/libminnow_debug.a
 
-build src/libminnow_debug.a: CXX_STATIC_LIBRARY_LINKER__minnow_debug_Debug src/CMakeFiles/minnow_debug.dir/byte_stream.cc.o src/CMakeFiles/minnow_debug.dir/byte_stream_helpers.cc.o src/CMakeFiles/minnow_debug.dir/network_interface.cc.o src/CMakeFiles/minnow_debug.dir/reassembler.cc.o src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o src/CMakeFiles/minnow_debug.dir/tcp_receiver.cc.o src/CMakeFiles/minnow_debug.dir/tcp_sender.cc.o src/CMakeFiles/minnow_debug.dir/wrapping_integers.cc.o
+build src/libminnow_debug.a: CXX_STATIC_LIBRARY_LINKER__minnow_debug_Debug src/CMakeFiles/minnow_debug.dir/byte_stream.cc.o src/CMakeFiles/minnow_debug.dir/byte_stream_helpers.cc.o src/CMakeFiles/minnow_debug.dir/network_interface.cc.o src/CMakeFiles/minnow_debug.dir/reassembler.cc.o src/CMakeFiles/minnow_debug.dir/router.cc.o src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o src/CMakeFiles/minnow_debug.dir/tcp_receiver.cc.o src/CMakeFiles/minnow_debug.dir/tcp_sender.cc.o src/CMakeFiles/minnow_debug.dir/wrapping_integers.cc.o
   LANGUAGE_COMPILE_FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g
   OBJECT_DIR = src/CMakeFiles/minnow_debug.dir
   POST_BUILD = :
@@ -2412,6 +2458,13 @@ build src/CMakeFiles/minnow_sanitized.dir/reassembler.cc.o: CXX_COMPILER__minnow
   OBJECT_DIR = src/CMakeFiles/minnow_sanitized.dir
   OBJECT_FILE_DIR = src/CMakeFiles/minnow_sanitized.dir
 
+build src/CMakeFiles/minnow_sanitized.dir/router.cc.o: CXX_COMPILER__minnow_sanitized_unscanned_Debug /home/bourbaki0404/CS_Learning/minnow/src/router.cc || cmake_object_order_depends_target_minnow_sanitized
+  DEP_FILE = src/CMakeFiles/minnow_sanitized.dir/router.cc.o.d
+  FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address
+  INCLUDES = -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src
+  OBJECT_DIR = src/CMakeFiles/minnow_sanitized.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/minnow_sanitized.dir
+
 build src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o: CXX_COMPILER__minnow_sanitized_unscanned_Debug /home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc || cmake_object_order_depends_target_minnow_sanitized
   DEP_FILE = src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o.d
   FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address
@@ -2448,7 +2501,7 @@ build src/CMakeFiles/minnow_sanitized.dir/wrapping_integers.cc.o: CXX_COMPILER__
 #############################################
 # Link the static library src/libminnow_sanitized.a
 
-build src/libminnow_sanitized.a: CXX_STATIC_LIBRARY_LINKER__minnow_sanitized_Debug src/CMakeFiles/minnow_sanitized.dir/byte_stream.cc.o src/CMakeFiles/minnow_sanitized.dir/byte_stream_helpers.cc.o src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.o src/CMakeFiles/minnow_sanitized.dir/reassembler.cc.o src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o src/CMakeFiles/minnow_sanitized.dir/tcp_receiver.cc.o src/CMakeFiles/minnow_sanitized.dir/tcp_sender.cc.o src/CMakeFiles/minnow_sanitized.dir/wrapping_integers.cc.o
+build src/libminnow_sanitized.a: CXX_STATIC_LIBRARY_LINKER__minnow_sanitized_Debug src/CMakeFiles/minnow_sanitized.dir/byte_stream.cc.o src/CMakeFiles/minnow_sanitized.dir/byte_stream_helpers.cc.o src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.o src/CMakeFiles/minnow_sanitized.dir/reassembler.cc.o src/CMakeFiles/minnow_sanitized.dir/router.cc.o src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o src/CMakeFiles/minnow_sanitized.dir/tcp_receiver.cc.o src/CMakeFiles/minnow_sanitized.dir/tcp_sender.cc.o src/CMakeFiles/minnow_sanitized.dir/wrapping_integers.cc.o
   LANGUAGE_COMPILE_FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g
   OBJECT_DIR = src/CMakeFiles/minnow_sanitized.dir
   POST_BUILD = :
@@ -2493,6 +2546,13 @@ build src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o: CXX_COMPILER__minnow
   OBJECT_DIR = src/CMakeFiles/minnow_optimized.dir
   OBJECT_FILE_DIR = src/CMakeFiles/minnow_optimized.dir
 
+build src/CMakeFiles/minnow_optimized.dir/router.cc.o: CXX_COMPILER__minnow_optimized_unscanned_Debug /home/bourbaki0404/CS_Learning/minnow/src/router.cc || cmake_object_order_depends_target_minnow_optimized
+  DEP_FILE = src/CMakeFiles/minnow_optimized.dir/router.cc.o.d
+  FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -O2
+  INCLUDES = -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src
+  OBJECT_DIR = src/CMakeFiles/minnow_optimized.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/minnow_optimized.dir
+
 build src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o: CXX_COMPILER__minnow_optimized_unscanned_Debug /home/bourbaki0404/CS_Learning/minnow/src/tcp_minnow_socket.cc || cmake_object_order_depends_target_minnow_optimized
   DEP_FILE = src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o.d
   FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -O2
@@ -2529,7 +2589,7 @@ build src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o: CXX_COMPILER__
 #############################################
 # Link the static library src/libminnow_optimized.a
 
-build src/libminnow_optimized.a: CXX_STATIC_LIBRARY_LINKER__minnow_optimized_Debug src/CMakeFiles/minnow_optimized.dir/byte_stream.cc.o src/CMakeFiles/minnow_optimized.dir/byte_stream_helpers.cc.o src/CMakeFiles/minnow_optimized.dir/network_interface.cc.o src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o
+build src/libminnow_optimized.a: CXX_STATIC_LIBRARY_LINKER__minnow_optimized_Debug src/CMakeFiles/minnow_optimized.dir/byte_stream.cc.o src/CMakeFiles/minnow_optimized.dir/byte_stream_helpers.cc.o src/CMakeFiles/minnow_optimized.dir/network_interface.cc.o src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o src/CMakeFiles/minnow_optimized.dir/router.cc.o src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o
   LANGUAGE_COMPILE_FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g
   OBJECT_DIR = src/CMakeFiles/minnow_optimized.dir
   POST_BUILD = :
@@ -2645,7 +2705,7 @@ build tests/libminnow_testing_sanitized.a: CXX_STATIC_LIBRARY_LINKER__minnow_tes
 #############################################
 # Utility command for functionality_testing
 
-build tests/functionality_testing: phony tests/byte_stream_basics tests/byte_stream_basics_sanitized tests/byte_stream_capacity tests/byte_stream_capacity_sanitized tests/byte_stream_many_writes tests/byte_stream_many_writes_sanitized tests/byte_stream_one_write tests/byte_stream_one_write_sanitized tests/byte_stream_stress_test tests/byte_stream_stress_test_sanitized tests/byte_stream_two_writes tests/byte_stream_two_writes_sanitized tests/net_interface tests/net_interface_sanitized tests/reassembler_cap tests/reassembler_cap_sanitized tests/reassembler_dup tests/reassembler_dup_sanitized tests/reassembler_holes tests/reassembler_holes_sanitized tests/reassembler_overlapping tests/reassembler_overlapping_sanitized tests/reassembler_seq tests/reassembler_seq_sanitized tests/reassembler_single tests/reassembler_single_sanitized tests/reassembler_win tests/reassembler_win_sanitized tests/recv_close tests/recv_close_sanitized tests/recv_connect tests/recv_connect_sanitized tests/recv_reorder tests/recv_reorder_more tests/recv_reorder_more_sanitized tests/recv_reorder_sanitized tests/recv_special tests/recv_special_sanitized tests/recv_transmit tests/recv_transmit_sanitized tests/recv_window tests/recv_window_sanitized tests/send_ack tests/send_ack_sanitized tests/send_close tests/send_close_sanitized tests/send_connect tests/send_connect_sanitized tests/send_extra tests/send_extra_sanitized tests/send_retx tests/send_retx_sanitized tests/send_transmit tests/send_transmit_sanitized tests/send_window tests/send_window_sanitized tests/wrapping_integers_cmp tests/wrapping_integers_cmp_sanitized tests/wrapping_integers_extra tests/wrapping_integers_extra_sanitized tests/wrapping_integers_roundtrip tests/wrapping_integers_roundtrip_sanitized tests/wrapping_integers_unwrap tests/wrapping_integers_unwrap_sanitized tests/wrapping_integers_wrap tests/wrapping_integers_wrap_sanitized
+build tests/functionality_testing: phony tests/byte_stream_basics tests/byte_stream_basics_sanitized tests/byte_stream_capacity tests/byte_stream_capacity_sanitized tests/byte_stream_many_writes tests/byte_stream_many_writes_sanitized tests/byte_stream_one_write tests/byte_stream_one_write_sanitized tests/byte_stream_stress_test tests/byte_stream_stress_test_sanitized tests/byte_stream_two_writes tests/byte_stream_two_writes_sanitized tests/net_interface tests/net_interface_sanitized tests/reassembler_cap tests/reassembler_cap_sanitized tests/reassembler_dup tests/reassembler_dup_sanitized tests/reassembler_holes tests/reassembler_holes_sanitized tests/reassembler_overlapping tests/reassembler_overlapping_sanitized tests/reassembler_seq tests/reassembler_seq_sanitized tests/reassembler_single tests/reassembler_single_sanitized tests/reassembler_win tests/reassembler_win_sanitized tests/recv_close tests/recv_close_sanitized tests/recv_connect tests/recv_connect_sanitized tests/recv_reorder tests/recv_reorder_more tests/recv_reorder_more_sanitized tests/recv_reorder_sanitized tests/recv_special tests/recv_special_sanitized tests/recv_transmit tests/recv_transmit_sanitized tests/recv_window tests/recv_window_sanitized tests/router tests/router_sanitized tests/send_ack tests/send_ack_sanitized tests/send_close tests/send_close_sanitized tests/send_connect tests/send_connect_sanitized tests/send_extra tests/send_extra_sanitized tests/send_retx tests/send_retx_sanitized tests/send_transmit tests/send_transmit_sanitized tests/send_window tests/send_window_sanitized tests/wrapping_integers_cmp tests/wrapping_integers_cmp_sanitized tests/wrapping_integers_extra tests/wrapping_integers_extra_sanitized tests/wrapping_integers_roundtrip tests/wrapping_integers_roundtrip_sanitized tests/wrapping_integers_unwrap tests/wrapping_integers_unwrap_sanitized tests/wrapping_integers_wrap tests/wrapping_integers_wrap_sanitized
 
 
 #############################################
@@ -4865,6 +4925,73 @@ build tests/net_interface: CXX_EXECUTABLE_LINKER__net_interface_Debug tests/CMak
   TARGET_PDB = net_interface.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target router_sanitized
+
+
+#############################################
+# Order-only phony target for router_sanitized
+
+build cmake_object_order_depends_target_router_sanitized: phony || cmake_object_order_depends_target_minnow_sanitized cmake_object_order_depends_target_minnow_testing_sanitized cmake_object_order_depends_target_util_sanitized
+
+build tests/CMakeFiles/router_sanitized.dir/router.cc.o: CXX_COMPILER__router_sanitized_unscanned_Debug /home/bourbaki0404/CS_Learning/minnow/tests/router.cc || cmake_object_order_depends_target_router_sanitized
+  DEP_FILE = tests/CMakeFiles/router_sanitized.dir/router.cc.o.d
+  FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address
+  INCLUDES = -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src
+  OBJECT_DIR = tests/CMakeFiles/router_sanitized.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/router_sanitized.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target router_sanitized
+
+
+#############################################
+# Link the executable tests/router_sanitized
+
+build tests/router_sanitized: CXX_EXECUTABLE_LINKER__router_sanitized_Debug tests/CMakeFiles/router_sanitized.dir/router.cc.o | tests/libminnow_testing_sanitized.a src/libminnow_sanitized.a util/libutil_sanitized.a || src/libminnow_sanitized.a tests/libminnow_testing_sanitized.a util/libutil_sanitized.a
+  FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g
+  LINK_FLAGS = -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address
+  LINK_LIBRARIES = tests/libminnow_testing_sanitized.a  src/libminnow_sanitized.a  util/libutil_sanitized.a
+  OBJECT_DIR = tests/CMakeFiles/router_sanitized.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/router_sanitized
+  TARGET_PDB = router_sanitized.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target router
+
+
+#############################################
+# Order-only phony target for router
+
+build cmake_object_order_depends_target_router: phony || cmake_object_order_depends_target_minnow_debug cmake_object_order_depends_target_minnow_testing_debug cmake_object_order_depends_target_util_debug
+
+build tests/CMakeFiles/router.dir/router.cc.o: CXX_COMPILER__router_unscanned_Debug /home/bourbaki0404/CS_Learning/minnow/tests/router.cc || cmake_object_order_depends_target_router
+  DEP_FILE = tests/CMakeFiles/router.dir/router.cc.o.d
+  FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/bourbaki0404/CS_Learning/minnow/util -I/home/bourbaki0404/CS_Learning/minnow/src
+  OBJECT_DIR = tests/CMakeFiles/router.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/router.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target router
+
+
+#############################################
+# Link the executable tests/router
+
+build tests/router: CXX_EXECUTABLE_LINKER__router_Debug tests/CMakeFiles/router.dir/router.cc.o | tests/libminnow_testing_debug.a src/libminnow_debug.a util/libutil_debug.a || src/libminnow_debug.a tests/libminnow_testing_debug.a util/libutil_debug.a
+  FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g
+  LINK_LIBRARIES = tests/libminnow_testing_debug.a  src/libminnow_debug.a  util/libutil_debug.a
+  OBJECT_DIR = tests/CMakeFiles/router.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/router
+  TARGET_PDB = router.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target byte_stream_speed_test
 
 
@@ -5256,6 +5383,10 @@ build recv_transmit_sanitized: phony tests/recv_transmit_sanitized
 build recv_window: phony tests/recv_window
 
 build recv_window_sanitized: phony tests/recv_window_sanitized
+
+build router: phony tests/router
+
+build router_sanitized: phony tests/router_sanitized
 
 build send_ack: phony tests/send_ack
 

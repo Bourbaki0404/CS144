@@ -6,42 +6,32 @@ void TCPReceiver::receive( TCPSenderMessage message )
 {
     if(message.RST){
         reassembler_.reader().set_error();
-        state = LISTEN;
     }
-    if(message.SYN && state == LISTEN){
+    if(message.SYN){
         SenderISN = message.seqno;
-        SenderSN = message.sequence_length();
-        state = ESTABLISHED;
-        unassembledIdx = 0;
-        uint64_t currentIdx = message.seqno.unwrap(SenderISN, unassembledIdx);
-        reassembler_.insert(currentIdx, message.payload, message.FIN);
-    }else if(state == ESTABLISHED || state == WAIT_CLOSE){
-        uint64_t currentIdx = message.seqno.unwrap(SenderISN, unassembledIdx) - SenderSN + unassembledIdx;
+        sync_ = true;
+        AckNo = 1;
+    }
+
+    if(sync_){
+        uint64_t streamIdx = message.seqno.unwrap(SenderISN, reassembler_.writer().bytes_pushed());
+        if(!message.SYN)
+            streamIdx--;
         uint64_t bytes_pushed = reassembler_.writer().bytes_pushed();
-        reassembler_.insert(currentIdx, message.payload, message.FIN);
-        unassembledIdx += reassembler_.writer().bytes_pushed() - bytes_pushed;
-        SenderSN += reassembler_.writer().bytes_pushed() - bytes_pushed;
-        if(message.FIN){
-            state = WAIT_CLOSE;
-        }
-        if(state == WAIT_CLOSE && reassembler_.writer().is_closed())
-            state = CLOSED;
+        reassembler_.insert(streamIdx, message.payload, message.FIN);
+        uint64_t offset = reassembler_.writer().bytes_pushed() - bytes_pushed;
+        AckNo += offset;
+        if(reassembler_.writer().writer().is_closed())
+            AckNo++;
     }
 }
 
 TCPReceiverMessage TCPReceiver::send() const
 {
-    // Your code here.
-    TCPReceiverMessage msg;
-    msg.window_size = std::min(reassembler_.writer().available_capacity(), (uint64_t)UINT16_MAX);
-    if(state == ESTABLISHED)
-        msg.ackno = Wrap32::wrap(SenderSN, SenderISN);
-    if(state == WAIT_CLOSE || state == CLOSED){
-        if(reassembler_.writer().is_closed())
-            msg.ackno = Wrap32::wrap(SenderSN + 1, SenderISN);
-        else
-            msg.ackno = Wrap32::wrap(SenderSN, SenderISN);
-    }
-    msg.RST = reassembler_.writer().has_error() || reassembler_.reader().has_error();
-    return msg;
+      TCPReceiverMessage msg;
+      msg.window_size = std::min(reassembler_.writer().available_capacity(), (uint64_t)UINT16_MAX);
+      if(sync_)
+          msg.ackno = Wrap32::wrap(AckNo, SenderISN);
+      msg.RST = reassembler_.writer().has_error() || reassembler_.reader().has_error();
+      return msg;
 }
